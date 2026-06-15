@@ -1,16 +1,15 @@
-# Mintlify Starter Kit
+# GAMA Works Documentation
 
-Use the starter kit to get your docs deployed and ready to customize.
+Documentation site for **GAMA Works** — a digital agency helping businesses build automations and workflows that create more value for their organization.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+- Website: [https://gama.works/](https://gama.works/)
+- Email: [hello@gama.works](mailto:hello@gama.works)
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+Built with [Mintlify](https://mintlify.com).
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+## About
+
+GAMA Works is an IT consulting and digital agency specializing in business automation and workflow optimization. This documentation covers guides, tools, and references for the solutions they build.
 
 ## Development
 
