@@ -14,10 +14,11 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Web Pages",
+        "tab": "Pages",
         "pages": [
           "home"
-        ]
+        ],
+        "hidden": true
       }
     ]
   },
