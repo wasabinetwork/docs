@@ -14,6 +14,13 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "About Me",
+        "icon": "scroll",
+        "pages": [
+          "background"
+        ]
+      },
+      {
         "tab": "Web2",
         "pages": [
           "it-services"
@@ -26,13 +33,6 @@
           "governance-funding-systems"
         ],
         "icon": "globe"
-      },
-      {
-        "tab": "About Me",
-        "pages": [
-          "background"
-        ],
-        "icon": "scroll"
       }
     ]
   },
@@ -60,7 +60,6 @@
   },
   "footer": {
     "socials": {
-      "website": "https://gama.works",
       "github": "https://github.com/wasabinetwork",
       "x": "https://x.com/WasabiNetwork",
       "instagram": "https://www.instagram.com/wasabi.network",
