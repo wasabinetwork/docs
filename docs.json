@@ -56,10 +56,6 @@
       }
     ]
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
   "navbar": {
     "links": [
       {
@@ -89,5 +85,6 @@
     "socials": {
       "website": "https://gama.works"
     }
-  }
+  },
+  "description": "a digital agency helping businesses build automations and workflows that create more value for their organization."
 }
