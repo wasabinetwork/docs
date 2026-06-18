@@ -1,13 +1,16 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "palm",
   "name": "GAMA Works",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/images/w.png",
+    "dark": "/images/w.png"
+  },
   "navigation": {
     "tabs": [
       {
@@ -75,16 +78,24 @@
      "view",
      "chatgpt",
      "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+    "perplexity"
+  ]
   },
   "footer": {
     "socials": {
-      "website": "https://gama.works"
+      "website": "https://gama.works",
+      "github": "https://github.com/wasabinetwork",
+      "x": "https://x.com/WasabiNetwork",
+      "instagram": "https://www.instagram.com/wasabi.network",
+      "telegram": "https://t.me/wasabinetwork"
     }
   },
-  "description": "a digital agency helping businesses build automations and workflows that create more value for their organization."
+  "description": "a digital agency helping businesses build automations and workflows that create more value for their organization.",
+  "logo": {
+    "light": "/images/w.png",
+    "dark": "/images/w.png"
+  },
+  "markdown": {
+    "schema": true
+  }
 }
