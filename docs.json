@@ -31,7 +31,8 @@
         "tab": "About Me",
         "pages": [
           "background"
-        ]
+        ],
+        "icon": "scroll"
       }
     ]
   },
