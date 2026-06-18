@@ -14,9 +14,21 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Services",
+        "tab": "Web2",
         "pages": [
           "it-services"
+        ]
+      },
+      {
+        "tab": "Web3",
+        "pages": [
+          "governance-funding-systems"
+        ]
+      },
+      {
+        "tab": "About Me",
+        "pages": [
+          "background"
         ]
       }
     ]
