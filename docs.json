@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "palm",
+  "theme": "luma",
   "name": "GAMA Works",
   "colors": {
     "primary": "#16A34A",
@@ -69,7 +69,7 @@
   "description": "a digital agency helping businesses build automations and workflows that create more value for their organization.",
   "logo": {
     "light": "/images/w.png",
-    "dark": "/images/w.png"
+    "dark": "/images/logo-dark-theme-offwhite.png"
   },
   "markdown": {
     "schema": true
