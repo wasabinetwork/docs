@@ -16,9 +16,8 @@
       {
         "tab": "Services",
         "pages": [
-          "home"
-        ],
-        "hidden": true
+          "it-services"
+        ]
       }
     ]
   },
