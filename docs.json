@@ -17,13 +17,15 @@
         "tab": "Web2",
         "pages": [
           "it-services"
-        ]
+        ],
+        "icon": "spider-web"
       },
       {
         "tab": "Web3",
         "pages": [
           "governance-funding-systems"
-        ]
+        ],
+        "icon": "globe"
       },
       {
         "tab": "About Me",
