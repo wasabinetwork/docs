@@ -23,7 +23,8 @@
       {
         "tab": "Web2",
         "pages": [
-          "it-services"
+          "it-services",
+          "gama-web-ready-bundle"
         ],
         "icon": "spider-web"
       },
