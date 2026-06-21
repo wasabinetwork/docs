@@ -17,7 +17,8 @@
         "tab": "About Me",
         "icon": "scroll",
         "pages": [
-          "background"
+          "background",
+          "contact"
         ]
       },
       {
