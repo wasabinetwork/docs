@@ -38,7 +38,7 @@ The goal is not technology for its own sake. The goal is to build systems that a
 
 | Service | What it helps you do | Learn more |
 | --- | --- | --- |
-| **IT Services** | Build websites, hosting, business email, web/mobile applications, and reliable digital infrastructure. | [Explore IT Services](./it-services.mdx) |
+| **IT Services** | Build and maintain custom applications, infrastructure, migrations, integrations, business email, and broader technical systems. | [Explore IT Services](./it-services.mdx) |
 | **GAMA WebReady Bundle** | Launch a professional web presence with website or blog design, business email, hosting, backups, support, and a clear path to ownership without a large upfront design fee. | [Explore WebReady](./gama-web-ready-bundle.mdx) |
 | **Automation & Workflow Design** | Reduce manual work, connect business processes, improve operational visibility, and create systems that scale with the organization. | [Explore Automation & Workflow Design](./automation-workflow-design.mdx) |
 | **Governance & Funding Systems** | Design and operate governance, grants, public-goods funding, ReFi, and ecosystem coordination systems. | [Explore Governance & Funding](./governance-funding-systems.mdx) |
@@ -93,7 +93,7 @@ This repository powers the GAMA Works documentation and service pages using [Min
 ### Main Pages
 
 - [Background / About](./background.mdx) — founder background, operating philosophy, public-goods work, and ecosystem experience.
-- [IT Services](./it-services.mdx) — web design, hosting, corporate email, application development, and infrastructure support.
+- [IT Services](./it-services.mdx) — custom applications, infrastructure, hosting, migrations, integrations, business email, and ongoing technical support.
 - [GAMA WebReady Bundle](./gama-web-ready-bundle.mdx) — the evergreen web-presence bundle for solopreneurs and small businesses.
 - [Automation & Workflow Design](./automation-workflow-design.mdx) — process mapping, workflow automation, tool integration, AI-assisted workflows, dashboards, and documentation.
 - [Governance & Funding Systems](./governance-funding-systems.mdx) — governance operations, grants programs, ecosystem design, and strategic advisory.
