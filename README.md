@@ -97,7 +97,7 @@ This repository powers the GAMA Works documentation and service pages using [Min
 - [GAMA WebReady Bundle](./gama-web-ready-bundle.mdx) — the evergreen web-presence bundle for solopreneurs and small businesses.
 - [Automation & Workflow Design](./automation-workflow-design.mdx) — process mapping, workflow automation, tool integration, AI-assisted workflows, dashboards, and documentation.
 - [Governance & Funding Systems](./governance-funding-systems.mdx) — governance operations, grants programs, ecosystem design, and strategic advisory.
-- [Contact](./contact.mdx) — communication channels, meeting booking, and service inquiries.
+- [Contact](./contact.mdx) — centralized inquiry hub, service routing, project intake guidance, booking, and existing-client support.
 
 The site configuration and navigation are defined in [`docs.json`](./docs.json).
 
