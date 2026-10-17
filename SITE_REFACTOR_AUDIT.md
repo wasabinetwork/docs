@@ -1,6 +1,6 @@
 # GAMA Works — Page Inventory & Information Architecture Audit
 
-**Status:** Content architecture review, before navigation refactor  
+**Status:** Content architecture complete; final navigation and source-level SEO audit prepared on an integration branch (pending review, merge, and live-site verification)  
 **Date:** 2026-10-17  
 **Repository:** [wasabinetwork/docs](https://github.com/wasabinetwork/docs)  
 **Scope:** Root Mintlify MDX pages and `docs.json` structure. This is an inventory and editorial plan, not a production SEO or browser rendering test.
@@ -9,7 +9,7 @@
 
 The previous refactor completed six core content pages, but the repository had **no `index.mdx` homepage** and **no `services.mdx` service overview**. The existing navigation remained grouped as **About Me / Web2 / Web3** and omitted the new **Automation & Workflow Design** page.
 
-A first-time visitor needs a business-level introduction and a simple way to choose between the four offers before that navigation structure can be replaced coherently.
+A first-time visitor needs a business-level introduction and a simple way to choose between the four offers. The final integration branch now replaces the legacy navigation with a company-first structure.
 
 This phase adds:
 - `index.mdx`: business-first homepage candidate, with one main discovery-call action and secondary service discovery.
@@ -35,7 +35,7 @@ These pages are intentionally authored **before** changes to `docs.json`.
 
 ### Current navigation problems
 
-The current `docs.json` tabs are:
+Before the integration PR, `docs.json` tabs were:
 - **About Me:** `background`, `contact`
 - **Web2:** `it-services`, `gama-web-ready-bundle`
 - **Web3:** `governance-funding-systems`
@@ -44,13 +44,13 @@ This hides the service cohesion of GAMA Works, does not represent the revised Ab
 
 ### Mintlify publication caveat
 
-Mintlify treats pages omitted from navigation as hidden pages. Their file-path URLs may be directly accessible, but they will not appear in the normal menu, and hidden pages are excluded from indexing by default. **Do not regard this content PR as the final home-page launch.** When ready, add `index` and `services` to the planned navigation and verify the intended root experience in Mintlify.
+Mintlify treats pages omitted from navigation as hidden pages and excludes them from indexing by default. The integration branch now includes `index`, `services`, and every core service page in `docs.json` navigation. **Until the PR is merged and the deployment is checked, do not claim the homepage is live, discoverable, or indexed.** Verify the root URL, navigation, robots directives, and sitemap in the deployed environment.
 
 Reference: https://mintlify.com/docs/guides/hidden-pages
 
 ## Suggested Information Architecture
 
-**Proposed only — do not implement in `docs.json` in this phase.**
+**Implemented in the integration branch, pending review and merge.** Existing page paths are preserved.
 
 | User-facing area | Proposed page route | Primary job |
 | --- | --- | --- |
@@ -100,19 +100,20 @@ The currently reviewed sources do **not** substantiate customer testimonials, co
 
 ### Priority 1 — Navigation, home-route activation, and publication QA
 
-- [ ] Rebuild `docs.json` around Home, Services, About, and Contact rather than Web2/Web3.
-- [ ] Put all four offers in a discoverable, coherent navigation structure.
+- [x] Rebuild `docs.json` around Home, Services, About, and Contact rather than Web2/Web3 (integration branch).
+- [x] Include all four offers in the Services tab (integration branch).
 - [ ] Confirm root `/` resolves to the intended homepage in the deployed Mintlify project.
 - [ ] Confirm both new pages are discoverable and indexed according to intended settings.
 - [ ] Decide whether to remove/archive `essentials/*.mdx` starter material.
-- [ ] Keep existing service URL paths or add redirects before any rename.
+- [x] Preserve existing service URL paths and add redirects for legacy `/gama-webready-bundle` and `/services/governance-funding-systems` links.
 
 ### Priority 2 — Quality, metadata, and conversion audit
 
 - [ ] Preview all pages in Mintlify on desktop and mobile; inspect spacing, cards, accordions, headings, and CTAs.
 - [ ] Check MDX build warnings, docs schema validity, and route availability.
-- [ ] Validate page-specific titles, descriptions, and social sharing previews.
-- [ ] Audit internal links and canonical email across all files.
+- [x] Improve all eight public-page titles, descriptions, and Mintlify search keywords in frontmatter (source-level).
+- [ ] Verify generated social sharing previews and canonicals on the deployed site.
+- [x] Audit internal page links and canonical email `hello@gama.works` across the eight public pages (source-level).
 - [ ] Confirm calendar and contact destinations work in the deployed site.
 - [ ] Review plan prices, service promises, ownership terms, and response-time claims for consistency.
 - [ ] Confirm analytics and consent settings are appropriate before adding new tracking.
@@ -124,12 +125,10 @@ The currently reviewed sources do **not** substantiate customer testimonials, co
 - [ ] A dedicated FAQ/help page **only if support volume warrants one** (service FAQs already exist).
 - [ ] Vertical pages or educational articles **only after search intent and content resources are validated**.
 
-## Scope of This PR
+## Implementation Phases
 
-- New `index.mdx`
-- New `services.mdx`
-- Updated `README.md`
-- New `SITE_REFACTOR_AUDIT.md`
-- **No changes to `docs.json`**
+**Content architecture (PR #8, merged):** Added `index.mdx`, `services.mdx`, this audit, and README links.
 
-The navigation, live root routing, and final SEO/conversion QA are deliberately reserved for the final integration pass.
+**Final navigation and source-level SEO integration (this PR):** Rebuilt `docs.json` with Home / Services / About / Contact tabs; placed all eight core pages in navigation; preserved existing URLs and configured two targeted 301 redirects; aligned metadata and internal search keywords; performed source-level route and component checks.
+
+**Still requires live verification after merge:** deployed Mintlify root route, menu rendering, mobile/desktop layout, schema/CLI validation, internal and external link behavior, generated Open Graph previews, canonical URLs, indexing, and analytics/consent settings. The connected Mintlify deployment available in this session is not the GAMA Works site. No production browser QA or live indexing claims are made.
