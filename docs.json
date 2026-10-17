@@ -41,14 +41,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
+        "label": "Email",
         "href": "mailto:hello@gama.works"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Meeting",
+      "href": "https://cal.com/wasabi/gama"
     }
   },
   "contextual": {
@@ -68,7 +68,7 @@
       "telegram": "https://t.me/wasabinetwork"
     }
   },
-  "description": "a digital agency helping businesses build automations and workflows that create more value for their organization.",
+  "description": "GAMA Works is a digital agency helping businesses build automation, workflows, websites, and digital systems that improve efficiency and create long-term value.",
   "logo": {
     "light": "/images/w.png",
     "dark": "/images/logo-dark-theme-offwhite.png"
