@@ -101,7 +101,7 @@ This repository powers the GAMA Works documentation and service pages using [Min
 - [Governance & Funding Systems](./governance-funding-systems.mdx) — governance operations, grants programs, ecosystem design, and strategic advisory.
 - [Contact](./contact.mdx) — centralized inquiry hub, service routing, project intake guidance, booking, and existing-client support.
 
-The site configuration and navigation are defined in [`docs.json`](./docs.json). New Home and Services pages will be introduced into public navigation during the final information-architecture pass. The inventory and launch checklist live in [`SITE_REFACTOR_AUDIT.md`](./SITE_REFACTOR_AUDIT.md).
+Site settings and the **Home → Services → About → Contact** navigation are defined in [`docs.json`](./docs.json). The Services tab includes WebReady, Automation & Workflow Design, IT Services, and Governance & Funding Systems. The page inventory, URL decisions, and post-merge QA checklist live in [`SITE_REFACTOR_AUDIT.md`](./SITE_REFACTOR_AUDIT.md).
 
 ---
 
