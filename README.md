@@ -92,6 +92,8 @@ This repository powers the GAMA Works documentation and service pages using [Min
 
 ### Main Pages
 
+- [Home](./index.mdx) — business-first overview, audience fit, service pathways, and discovery calls.
+- [Services](./services.mdx) — compare WebReady, Automation, IT Services, and Governance & Funding Systems.
 - [About GAMA Works](./background.mdx) — mission, vision, service philosophy, founder story, relevant experience, and how we work.
 - [IT Services](./it-services.mdx) — custom applications, infrastructure, hosting, migrations, integrations, business email, and ongoing technical support.
 - [GAMA WebReady Bundle](./gama-web-ready-bundle.mdx) — the evergreen web-presence bundle for solopreneurs and small businesses.
@@ -99,7 +101,7 @@ This repository powers the GAMA Works documentation and service pages using [Min
 - [Governance & Funding Systems](./governance-funding-systems.mdx) — governance operations, grants programs, ecosystem design, and strategic advisory.
 - [Contact](./contact.mdx) — centralized inquiry hub, service routing, project intake guidance, booking, and existing-client support.
 
-The site configuration and navigation are defined in [`docs.json`](./docs.json).
+The site configuration and navigation are defined in [`docs.json`](./docs.json). New Home and Services pages will be introduced into public navigation during the final information-architecture pass. The inventory and launch checklist live in [`SITE_REFACTOR_AUDIT.md`](./SITE_REFACTOR_AUDIT.md).
 
 ---
 
