@@ -41,7 +41,7 @@ The goal is not technology for its own sake. The goal is to build systems that a
 | **IT Services** | Build and maintain custom applications, infrastructure, migrations, integrations, business email, and broader technical systems. | [Explore IT Services](./it-services.mdx) |
 | **GAMA WebReady Bundle** | Launch a professional web presence with website or blog design, business email, hosting, backups, support, and a clear path to ownership without a large upfront design fee. | [Explore WebReady](./gama-web-ready-bundle.mdx) |
 | **Automation & Workflow Design** | Reduce manual work, connect business processes, improve operational visibility, and create systems that scale with the organization. | [Explore Automation & Workflow Design](./automation-workflow-design.mdx) |
-| **Governance & Funding Systems** | Design and operate governance, grants, public-goods funding, ReFi, and ecosystem coordination systems. | [Explore Governance & Funding](./governance-funding-systems.mdx) |
+| **Governance & Funding Systems** | Design accountable governance, build and operate grants programs, develop funding frameworks, and provide fractional ecosystem operations and advisory. | [Explore Governance & Funding](./governance-funding-systems.mdx) |
 
 ---
 
