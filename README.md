@@ -92,7 +92,7 @@ This repository powers the GAMA Works documentation and service pages using [Min
 
 ### Main Pages
 
-- [Background / About](./background.mdx) — founder background, operating philosophy, public-goods work, and ecosystem experience.
+- [About GAMA Works](./background.mdx) — mission, vision, service philosophy, founder story, relevant experience, and how we work.
 - [IT Services](./it-services.mdx) — custom applications, infrastructure, hosting, migrations, integrations, business email, and ongoing technical support.
 - [GAMA WebReady Bundle](./gama-web-ready-bundle.mdx) — the evergreen web-presence bundle for solopreneurs and small businesses.
 - [Automation & Workflow Design](./automation-workflow-design.mdx) — process mapping, workflow automation, tool integration, AI-assisted workflows, dashboards, and documentation.
