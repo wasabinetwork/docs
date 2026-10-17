@@ -39,7 +39,7 @@ The goal is not technology for its own sake. The goal is to build systems that a
 | Service | What it helps you do | Learn more |
 | --- | --- | --- |
 | **IT Services** | Build websites, hosting, business email, web/mobile applications, and reliable digital infrastructure. | [Explore IT Services](./it-services.mdx) |
-| **GAMA WebReady Bundle** | Launch a professional web presence with website or blog design, domain, business email, hosting, backups, and support in one convenient bundle. | [Explore WebReady](./gama-web-ready-bundle.mdx) |
+| **GAMA WebReady Bundle** | Launch a professional web presence with website or blog design, business email, hosting, backups, support, and a clear path to ownership without a large upfront design fee. | [Explore WebReady](./gama-web-ready-bundle.mdx) |
 | **Automation & Workflow Design** | Reduce manual work, connect business processes, improve operational visibility, and create systems that scale with the organization. | [Explore Automation & Workflow Design](./automation-workflow-design.mdx) |
 | **Governance & Funding Systems** | Design and operate governance, grants, public-goods funding, ReFi, and ecosystem coordination systems. | [Explore Governance & Funding](./governance-funding-systems.mdx) |
 
@@ -94,7 +94,7 @@ This repository powers the GAMA Works documentation and service pages using [Min
 
 - [Background / About](./background.mdx) — founder background, operating philosophy, public-goods work, and ecosystem experience.
 - [IT Services](./it-services.mdx) — web design, hosting, corporate email, application development, and infrastructure support.
-- [GAMA WebReady Bundle](./gama-web-ready-bundle.mdx) — the starter web-presence bundle for solopreneurs and small businesses.
+- [GAMA WebReady Bundle](./gama-web-ready-bundle.mdx) — the evergreen web-presence bundle for solopreneurs and small businesses.
 - [Automation & Workflow Design](./automation-workflow-design.mdx) — process mapping, workflow automation, tool integration, AI-assisted workflows, dashboards, and documentation.
 - [Governance & Funding Systems](./governance-funding-systems.mdx) — governance operations, grants programs, ecosystem design, and strategic advisory.
 - [Contact](./contact.mdx) — communication channels, meeting booking, and service inquiries.
@@ -162,7 +162,7 @@ Before publishing, verify:
 - Mobile readability
 - Metadata titles and descriptions
 - Contact and booking links
-- Any pricing, deadlines, guarantees, or campaign-specific terms that may change over time
+- Any pricing, guarantees, availability, or campaign-specific terms that may change over time
 
 ---
 
