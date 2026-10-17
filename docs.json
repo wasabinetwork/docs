@@ -14,51 +14,60 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "About Me",
-        "icon": "scroll",
+        "tab": "Home",
+        "icon": "house",
         "pages": [
-          "background",
-          "contact"
+          "index"
         ]
       },
       {
-        "tab": "Web2",
+        "tab": "Services",
+        "icon": "briefcase",
         "pages": [
+          "services",
+          "gama-web-ready-bundle",
+          "automation-workflow-design",
           "it-services",
-          "gama-web-ready-bundle"
-        ],
-        "icon": "spider-web"
+          "governance-funding-systems"
+        ]
       },
       {
-        "tab": "Web3",
+        "tab": "About",
+        "icon": "users",
         "pages": [
-          "governance-funding-systems"
-        ],
-        "icon": "globe"
+          "background"
+        ]
+      },
+      {
+        "tab": "Contact",
+        "icon": "message-circle",
+        "pages": [
+          "contact"
+        ]
       }
     ]
   },
   "navbar": {
     "links": [
       {
-        "label": "Email",
+        "label": "Email Us",
         "href": "mailto:hello@gama.works"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Meeting",
+      "label": "Book a Call",
       "href": "https://cal.com/wasabi/gama"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-    "perplexity"
-  ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity"
+    ]
   },
   "footer": {
     "socials": {
@@ -68,12 +77,22 @@
       "telegram": "https://t.me/wasabinetwork"
     }
   },
-  "description": "GAMA Works is a digital agency helping businesses build automation, workflows, websites, and digital systems that improve efficiency and create long-term value.",
+  "description": "GAMA Works builds websites, business automations, custom technical systems, and governance solutions that help organizations operate better.",
   "logo": {
     "light": "/images/w.png",
     "dark": "/images/logo-dark-theme-offwhite.png"
   },
   "markdown": {
     "schema": true
-  }
+  },
+  "redirects": [
+    {
+      "source": "/gama-webready-bundle",
+      "destination": "/gama-web-ready-bundle"
+    },
+    {
+      "source": "/services/governance-funding-systems",
+      "destination": "/governance-funding-systems"
+    }
+  ]
 }
