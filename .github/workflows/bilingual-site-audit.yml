@@ -1,0 +1,35 @@
+name: GAMA Works bilingual production smoke audit
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "docs.json"
+      - "scripts/audit_live_site.py"
+      - ".github/workflows/bilingual-site-audit.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  production-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate audit script syntax
+        run: python -m py_compile scripts/audit_live_site.py
+      - name: Check 18 public English and Spanish routes
+        run: python scripts/audit_live_site.py --base https://gama.works --fail-on-error
+      - name: Upload JSON and Markdown evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gama-production-audit
+          path: reports/site-audit.*
+          if-no-files-found: warn
