@@ -800,3 +800,9 @@
 }
 
 .gama-svc-detail-display-web{box-shadow:15px 15px 0 #0c493e,0 15px 30px rgba(0,0,0,.28)}
+
+
+/* Distinguish interactive row and FAQ boundaries with at least 3:1 on white. */
+.gama-svc-outcome-row{border-top-color:#698a78}
+.gama-svc-faq-item,.gama-guide-faq{border-bottom-color:#698a78}
+.gama-svc-faq-list,.gama-guide-faqs{border-top-color:#698a78}
