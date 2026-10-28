@@ -1,3 +1,5 @@
+import { GamaInfoColumns, GamaInfoCard, GamaGuideNote, GamaGuideTabs, GamaGuideTab, GamaGuideSteps, GamaGuideStep, GamaGuideAccordions, GamaGuideAccordion } from '/snippets/gama-service-blocks.jsx';
+
 ## Build Systems That Reduce Friction and Create More Value
 
 GAMA Works helps businesses turn repetitive work, disconnected tools, manual handoffs, and unclear processes into practical automations and workflows that are easier to operate and scale.
@@ -6,9 +8,9 @@ The goal is not to automate everything.
 
 The goal is to identify **where automation creates leverage**, where human judgment still matters, and how technology can help your organization operate with less friction.
 
-<Info>
+<GamaGuideNote kind="info">
   A good automation should save time, reduce errors, improve visibility, or make an important business process more reliable. If it does none of those things, it probably should not exist.
-</Info>
+</GamaGuideNote>
 
 ---
 
@@ -27,39 +29,39 @@ It is especially useful when your team is saying things like:
 - “We are spending too much time operating the business instead of growing it.”
 - “We want to use AI, but we do not know where it would actually help.”
 
-<Check>
+<GamaGuideNote kind="check">
   If the problem is recurring, rules-based, measurable, and currently consuming human attention, it may be a strong candidate for automation.
-</Check>
+</GamaGuideNote>
 
 ---
 
 ## What GAMA Works Helps You Improve
 
-<Columns cols={2}>
-  <Card title="Process Mapping" icon="route">
+<GamaInfoColumns cols={2}>
+  <GamaInfoCard title="Process Mapping" icon="route">
     Understand how work moves through your organization today, where it slows down, and which steps create unnecessary friction.
-  </Card>
+  </GamaInfoCard>
 
-  <Card title="Workflow Automation" icon="gears">
+  <GamaInfoCard title="Workflow Automation" icon="gears">
     Automate repetitive tasks, handoffs, notifications, routing, approvals, data movement, and other repeatable operational work.
-  </Card>
+  </GamaInfoCard>
 
-  <Card title="Tool Integration" icon="link">
+  <GamaInfoCard title="Tool Integration" icon="link">
     Connect the software your organization already uses so information moves between systems with fewer manual steps.
-  </Card>
+  </GamaInfoCard>
 
-  <Card title="AI-Assisted Workflows" icon="sparkles">
+  <GamaInfoCard title="AI-Assisted Workflows" icon="sparkles">
     Introduce AI where it can meaningfully support research, classification, drafting, summarization, routing, analysis, or decision support.
-  </Card>
+  </GamaInfoCard>
 
-  <Card title="Operational Dashboards" icon="chart-line">
+  <GamaInfoCard title="Operational Dashboards" icon="chart-line">
     Turn scattered operational data into useful views that help your team understand what is happening and what needs attention.
-  </Card>
+  </GamaInfoCard>
 
-  <Card title="Documentation & Ownership" icon="book-open">
+  <GamaInfoCard title="Documentation & Ownership" icon="book-open">
     Document how the system works so your organization is not dependent on hidden logic, undocumented processes, or one person’s memory.
-  </Card>
-</Columns>
+  </GamaInfoCard>
+</GamaInfoColumns>
 
 ---
 
@@ -81,42 +83,42 @@ This helps avoid a common failure mode: automating a broken process and making t
 
 ## How the Engagement Works
 
-<Steps>
-  <Step title="1. Understand the Problem">
+<GamaGuideSteps>
+  <GamaGuideStep title="1. Understand the Problem">
     We clarify the business objective, current pain points, people involved, tools being used, and what a successful outcome should look like.
-  </Step>
+  </GamaGuideStep>
 
-  <Step title="2. Map the Current Workflow">
+  <GamaGuideStep title="2. Map the Current Workflow">
     We document the important steps, inputs, decisions, handoffs, approvals, systems, and failure points in the existing process.
-  </Step>
+  </GamaGuideStep>
 
-  <Step title="3. Identify Automation Opportunities">
+  <GamaGuideStep title="3. Identify Automation Opportunities">
     We separate work that should be automated from work that still benefits from human judgment, review, or relationship-building.
-  </Step>
+  </GamaGuideStep>
 
-  <Step title="4. Design the Future Workflow">
+  <GamaGuideStep title="4. Design the Future Workflow">
     We create a simpler operating model showing how information, people, tools, automations, and exceptions should work together.
-  </Step>
+  </GamaGuideStep>
 
-  <Step title="5. Build and Integrate">
+  <GamaGuideStep title="5. Build and Integrate">
     We configure the automations, integrations, logic, notifications, dashboards, or supporting systems needed to implement the workflow.
-  </Step>
+  </GamaGuideStep>
 
-  <Step title="6. Test Real Scenarios">
+  <GamaGuideStep title="6. Test Real Scenarios">
     We test normal cases, edge cases, failures, permissions, duplicate events, and human handoffs before treating the workflow as production-ready.
-  </Step>
+  </GamaGuideStep>
 
-  <Step title="7. Document and Improve">
+  <GamaGuideStep title="7. Document and Improve">
     We document the workflow, explain how it operates, and identify what should be monitored or improved as the organization grows.
-  </Step>
-</Steps>
+  </GamaGuideStep>
+</GamaGuideSteps>
 
 ---
 
 ## Common Automation Use Cases
 
-<Tabs>
-  <Tab title="Sales & Leads">
+<GamaGuideTabs>
+  <GamaGuideTab title="Sales & Leads">
     - Capture leads from websites, forms, email, ads, or referrals
     - Route inquiries to the right person
     - Send internal notifications
@@ -124,9 +126,9 @@ This helps avoid a common failure mode: automating a broken process and making t
     - Trigger follow-up sequences
     - Track lead status and response time
     - Reduce missed opportunities
-  </Tab>
+  </GamaGuideTab>
 
-  <Tab title="Client Operations">
+  <GamaGuideTab title="Client Operations">
     - Client onboarding workflows
     - Intake forms and information collection
     - Proposal and approval handoffs
@@ -134,9 +136,9 @@ This helps avoid a common failure mode: automating a broken process and making t
     - Status notifications
     - Support request routing
     - Renewal and follow-up reminders
-  </Tab>
+  </GamaGuideTab>
 
-  <Tab title="Internal Operations">
+  <GamaGuideTab title="Internal Operations">
     - Approval workflows
     - Task creation and assignment
     - Recurring operational checklists
@@ -144,9 +146,9 @@ This helps avoid a common failure mode: automating a broken process and making t
     - Data synchronization
     - Internal alerts
     - Team reporting
-  </Tab>
+  </GamaGuideTab>
 
-  <Tab title="Finance & Administration">
+  <GamaGuideTab title="Finance & Administration">
     - Invoice and payment notifications
     - Purchase request workflows
     - Expense intake
@@ -154,9 +156,9 @@ This helps avoid a common failure mode: automating a broken process and making t
     - Recurring reporting
     - Account or subscription tracking
     - Administrative reminders
-  </Tab>
+  </GamaGuideTab>
 
-  <Tab title="Content & Marketing">
+  <GamaGuideTab title="Content & Marketing">
     - Content intake and planning
     - Draft preparation
     - Approval workflows
@@ -164,9 +166,9 @@ This helps avoid a common failure mode: automating a broken process and making t
     - Lead magnet delivery
     - Email list workflows
     - Campaign reporting
-  </Tab>
+  </GamaGuideTab>
 
-  <Tab title="AI Workflows">
+  <GamaGuideTab title="AI Workflows">
     - Summarize incoming information
     - Categorize or tag requests
     - Extract structured information from documents
@@ -174,8 +176,8 @@ This helps avoid a common failure mode: automating a broken process and making t
     - Research and synthesis support
     - Route work based on content
     - Human-reviewed decision support
-  </Tab>
-</Tabs>
+  </GamaGuideTab>
+</GamaGuideTabs>
 
 ---
 
@@ -185,9 +187,9 @@ Not every decision should be handed to software or AI.
 
 For workflows involving money, reputation, customer relationships, sensitive information, governance, compliance, or high-impact decisions, GAMA Works favors **human-in-the-loop systems** where automation prepares, routes, verifies, or recommends — and a person retains appropriate control.
 
-<Warning>
+<GamaGuideNote kind="warning">
   Automation should reduce operational risk, not hide it. Critical actions should have clear permissions, logs, fallbacks, and escalation paths appropriate to their impact.
-</Warning>
+</GamaGuideNote>
 
 ---
 
@@ -209,9 +211,9 @@ GAMA Works can incorporate AI into systems for tasks such as:
 
 The implementation should still account for accuracy, privacy, cost, review requirements, and what happens when the model is uncertain or wrong.
 
-<Note>
+<GamaGuideNote kind="note">
   The best AI workflow is often one where AI removes low-value cognitive work while humans retain responsibility for judgment and relationships.
-</Note>
+</GamaGuideNote>
 
 ---
 
@@ -276,23 +278,23 @@ Sometimes it is a simpler process, clearer responsibility, better documentation,
 
 ## Engagement Models
 
-<Columns cols={2}>
-  <Card title="Workflow Audit" icon="magnifying-glass-chart">
+<GamaInfoColumns cols={2}>
+  <GamaInfoCard title="Workflow Audit" icon="magnifying-glass-chart">
     Review an existing business process, identify bottlenecks and automation opportunities, and produce a prioritized improvement plan.
-  </Card>
+  </GamaInfoCard>
 
-  <Card title="Automation Project" icon="bolt">
+  <GamaInfoCard title="Automation Project" icon="bolt">
     Design and implement a defined automation or integration from discovery through testing and documentation.
-  </Card>
+  </GamaInfoCard>
 
-  <Card title="Operations System Build" icon="network-wired">
+  <GamaInfoCard title="Operations System Build" icon="network-wired">
     Redesign a broader operational workflow that may involve multiple tools, teams, automations, dashboards, and handoffs.
-  </Card>
+  </GamaInfoCard>
 
-  <Card title="Ongoing Optimization" icon="arrows-rotate">
+  <GamaInfoCard title="Ongoing Optimization" icon="arrows-rotate">
     Continuously improve existing workflows as your organization, tools, volume, and operating requirements evolve.
-  </Card>
-</Columns>
+  </GamaInfoCard>
+</GamaInfoColumns>
 
 ---
 
@@ -322,35 +324,35 @@ This may not be the right engagement if:
 
 ## Frequently Asked Questions
 
-<AccordionGroup>
-  <Accordion title="Do I need to know which automation tool I want to use?">
+<GamaGuideAccordions>
+  <GamaGuideAccordion title="Do I need to know which automation tool I want to use?">
     No. Start with the business problem and current workflow. GAMA Works can recommend an implementation approach based on your requirements, existing tools, budget, technical constraints, and ownership preferences.
-  </Accordion>
+  </GamaGuideAccordion>
 
-  <Accordion title="Can you work with the tools we already use?">
+  <GamaGuideAccordion title="Can you work with the tools we already use?">
     Often, yes. One of the first steps is understanding your existing systems and whether they expose the APIs, webhooks, integrations, exports, or permissions needed to build a reliable workflow.
-  </Accordion>
+  </GamaGuideAccordion>
 
-  <Accordion title="Can you build AI agents or AI-powered workflows?">
+  <GamaGuideAccordion title="Can you build AI agents or AI-powered workflows?">
     Yes, when AI is a good fit for the task. The workflow should include appropriate context, validation, permissions, observability, and human review based on the risk of the action being performed.
-  </Accordion>
+  </GamaGuideAccordion>
 
-  <Accordion title="Do you only work with small businesses?">
+  <GamaGuideAccordion title="Do you only work with small businesses?">
     No. Small and medium-sized organizations are a strong fit because they often benefit greatly from reducing manual operational work, but GAMA Works also supports nonprofits, digital ventures, DAOs, ecosystem organizations, and other teams with clearly defined workflow problems.
-  </Accordion>
+  </GamaGuideAccordion>
 
-  <Accordion title="Can you automate a process that is not documented yet?">
+  <GamaGuideAccordion title="Can you automate a process that is not documented yet?">
     Yes. Process discovery and workflow mapping can be part of the engagement. In many cases, documenting the real process is the most important first step.
-  </Accordion>
+  </GamaGuideAccordion>
 
-  <Accordion title="Will automation eliminate jobs?">
+  <GamaGuideAccordion title="Will automation eliminate jobs?">
     That is not the objective. The focus is usually on eliminating repetitive, low-value work so people can spend more time on judgment, service, growth, relationships, and work that actually benefits from human attention.
-  </Accordion>
+  </GamaGuideAccordion>
 
-  <Accordion title="How is pricing determined?">
+  <GamaGuideAccordion title="How is pricing determined?">
     Automation work is scoped according to the workflow complexity, number of systems involved, integration requirements, risk level, custom development needs, testing requirements, and ongoing support needs. After discovery, GAMA Works can provide a written scope and proposal.
-  </Accordion>
-</AccordionGroup>
+  </GamaGuideAccordion>
+</GamaGuideAccordions>
 
 ---
 
@@ -362,12 +364,12 @@ Bring the repetitive task, broken handoff, disconnected tools, operational bottl
 
 We can map the problem and determine whether the right answer is **automation, integration, simplification, custom software, or a better workflow**.
 
-<Columns cols={2}>
-  <Card title="Tell Me What Is Slowing You Down" icon="message-circle" href="/contact">
+<GamaInfoColumns cols={2}>
+  <GamaInfoCard title="Tell Me What Is Slowing You Down" icon="message-circle" href="/contact">
     Share the process, bottleneck, or automation idea you want to improve.
-  </Card>
+  </GamaInfoCard>
 
-  <Card title="Book a Working Session" icon="calendar" href="https://cal.com/wasabi/gama">
+  <GamaInfoCard title="Book a Working Session" icon="calendar" href="https://cal.com/wasabi/gama">
     Schedule a conversation about your workflow and what a better operating system could look like.
-  </Card>
-</Columns>
+  </GamaInfoCard>
+</GamaInfoColumns>
