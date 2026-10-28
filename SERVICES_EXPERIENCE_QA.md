@@ -28,7 +28,7 @@ The illustrations and layouts are defined in `snippets/gama-services.jsx`, with 
 - **Governance & Funding:** health checks, grants operations, decision processes, scope-defined pricing, conflict-of-interest and accountability concerns, no implied legal/tax/investment/fiduciary advice.
 - **Services overview:** four offerings, engagement models, what is/not included, and no unverified outcome promises.
 
-Content migration is **lossless**: the body of each original main-branch page is copied without edits into its imported `.mdx` snippet. Title, SEO description, keywords, and OG/Twitter image metadata are preserved; page `mode` becomes `custom` to enable the landing-page design.
+Content migration preserves **all original service copy, details, terms, and FAQs** in the imported `.mdx` snippets. One non-substantive accessibility adjustment changes the Services overview guide's first heading from H1 to H2 because the new visual hero is the page's H1. Title, SEO description, keywords, and OG/Twitter image metadata are preserved; page `mode` becomes `custom` to enable the landing-page design.
 
 ## Pre-merge acceptance checks
 
