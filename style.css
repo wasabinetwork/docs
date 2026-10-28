@@ -806,3 +806,10 @@
 .gama-svc-outcome-row{border-top-color:#698a78}
 .gama-svc-faq-item,.gama-guide-faq{border-bottom-color:#698a78}
 .gama-svc-faq-list,.gama-guide-faqs{border-top-color:#698a78}
+
+
+/* Individual service illustration finishes, consistent with the brand palette. */
+.gama-svc-detail-visual-web{background:radial-gradient(circle at 61% 37%,rgba(31,215,143,.22),transparent 54%),linear-gradient(135deg,#153f41,#0a1c25)}
+.gama-svc-detail-visual-automation{background:radial-gradient(circle at 50% 47%,rgba(28,214,133,.25),transparent 55%),linear-gradient(145deg,#10393d,#0a1c25)}
+.gama-svc-detail-visual-it{background:radial-gradient(circle at 46% 45%,rgba(33,191,146,.19),transparent 54%),linear-gradient(140deg,#132c43,#0a1c25)}
+.gama-svc-detail-visual-governance{background:radial-gradient(circle at 53% 48%,rgba(47,199,134,.2),transparent 58%),linear-gradient(142deg,#123a37,#0a1c25)}
