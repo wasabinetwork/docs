@@ -1,15 +1,15 @@
 # GAMA Works — Bilingual Launch Roadmap
 
 **Phase:** Native Mintlify localization foundation, English + Spanish.
-**Status:** The complete Automation translation is merged. IT Services Spanish localization is in the current review branch; merge after Mintlify preview, copy and accessibility review.
+**Status:** Home, Services overview, Portfolio, WebReady, Automation and IT Services are merged in Spanish. Governance & Funding is translated in the current review branch; merge only after Mintlify preview, copy and accessibility review.
 
 ## Product architecture
 
 - **English:** all existing routes remain in place (no moves, no redirects, no renamed files).
-- **Spanish:** `/es/`, `/es/services`, `/es/portfolio`, `/es/gama-web-ready-bundle`, `/es/automation-workflow-design`, and `/es/it-services`, using native navigation under `navigation.languages`.
+- **Spanish:** `/es/`, `/es/services`, `/es/portfolio`, `/es/gama-web-ready-bundle`, `/es/automation-workflow-design`, `/es/it-services`, and `/es/governance-funding-systems`, using native navigation under `navigation.languages`.
 - The primary GAMA Works website stays on Mintlify. Atlas is an independent e-commerce OS initiative on its own subdomain.
 - Spanish marketing copy uses neutral, readable Latin American Spanish suitable for Dominican businesses.
-- Complex Spanish JSX lives in `snippets/gama-es.jsx`, `snippets/gama-webready-es.jsx`, and `snippets/gama-automation-es.jsx`, and `snippets/gama-it-es.jsx`, rendered through minimal MDX entrypoints to avoid the prior Mintlify editor parsing problem.
+- Complex Spanish JSX lives in `snippets/gama-es.jsx`, `snippets/gama-webready-es.jsx`, and `snippets/gama-automation-es.jsx`, `snippets/gama-it-es.jsx`, and `snippets/gama-governance-es.jsx`, rendered through minimal MDX entrypoints to avoid the prior Mintlify editor parsing problem.
 - Existing social image assets are reused rather than generating unapproved new artwork. Note that existing image text may still be in English; localized OG artwork is a future creative task.
 
 ## What this initial localization includes
@@ -21,12 +21,12 @@
 | Portfolio | `/portfolio` | `/es/portfolio` | New Spanish portfolio |
 | WebReady terms | `/gama-web-ready-bundle` | `/es/gama-web-ready-bundle` | Merged; complete Spanish guide |
 | Automation details | `/automation-workflow-design` | `/es/automation-workflow-design` | Merged; complete Spanish guide |
-| IT details | `/it-services` | `/es/it-services` | **Translated in current PR; preview/review required** |
-| Governance details | `/governance-funding-systems` | — | **Translation pending** |
+| IT details | `/it-services` | `/es/it-services` | Merged; complete Spanish guide |
+| Governance details | `/governance-funding-systems` | `/es/governance-funding-systems` | **Translated in current PR; preview/review required** |
 | About | `/background` | — | **Translation pending** |
 | Contact | `/contact` | — | **Translation pending** |
 
-**Important:** This is a **partial bilingual launch foundation**. Spanish Home and Services route WebReady, Automation, and IT visitors to their complete Spanish guides. Governance, About, and Contact still lead to English pages; notices identify these remaining gaps. The Spanish menu intentionally exposes only translated pages. It must not be described as fully translated until all remaining public routes and policy terms are localized.
+**Important:** This is a **partial bilingual launch foundation**. Spanish Home and Services route all four service visitors to complete Spanish guides. About and Contact still lead to English pages; notices identify these remaining gaps. The Spanish menu intentionally exposes only translated pages. It must not be described as fully translated until all remaining public routes and policy terms are localized.
 
 ## Translation principles
 
@@ -54,7 +54,7 @@
 
 ## Next implementation increment
 
-1. **WebReady and Automation are merged; IT Services is translated in this review branch.** Complete Governance & Funding next.
+1. **All four detailed services are translated once this PR merges.** Translate About and Contact next, including commercial inquiries and founder-role qualifications.
 2. Localize About and Contact, including their calls to action and project-intake descriptions.
 3. Create localized social-sharing assets if desired.
 4. Audit language-specific SEO and test the full bilingual conversion flow end to end.
@@ -79,7 +79,7 @@
 - Verify mobile diagram text, source-level contrast plus browser WCAG 2.2 AA checks, translated metadata and all in-language internal links before merging.
 
 
-## IT Services full localization audit (current PR)
+## IT Services full localization audit (previously merged)
 
 - Public route: `/es/it-services`; thin entrypoint: `es/it-services.mdx`; localized visual: `snippets/gama-it-es.jsx`.
 - Full Spanish guide: `snippets/service-content/it-es.mdx`.
@@ -88,3 +88,16 @@
 - Ongoing support, response expectations and fees depend on written agreement; custom projects require discovery and a defined proposal.
 - Keep the English published booking destination unchanged while making Spanish WebReady, Automation, Home, and Services routes link directly to `/es/it-services`.
 - Preview must check Mintlify editor parsing, rich content, mobile overflow, the annotated IT systems illustration, WCAG 2.2 AA contrast/keyboard behavior and native i18n routing.
+
+
+## Governance & Funding full localization audit (current PR)
+
+- Public route: `/es/governance-funding-systems`; MDX entrypoint: `es/governance-funding-systems.mdx`.
+- Complete Spanish guide: `snippets/service-content/governance-es.mdx`; visual experience: `snippets/gama-governance-es.jsx`.
+- Preserve all **five engagement models** (health check, governance system, grant program, ecosystem/funding framework, and fractional strategic operations), process flows, use-case groups, indicators, founder history and all FAQs.
+- **Strict authority boundary:** recommendations and process support do not grant treasury signing rights, custody, disbursement authority, privileged access or final funding-decision rights. Decision rights remain with the client's authorized body unless explicitly assigned in a separate appropriately controlled agreement.
+- **Professional boundary:** not legal, tax, investment, audit, or regulated fiduciary advice; independent qualified specialists may be required.
+- No guarantees of grant awards, fundraising outcomes, token prices, community consensus, voting results, impact improvements or formal independent assurance.
+- Existing founder roles in Gitcoin, Octant Community Fund, Polygon General Grants and Kokonut Network are attributed as founder experience, **not** as GAMA Works client engagements, sponsorships or endorsements.
+- Keep the original booking URL, use Spanish WebReady, Automation and IT cross-links, and visibly identify About and Contact as English-only until localized.
+- Confirm mobile and desktop visual rendering, agreement-language review, WCAG 2.2 AA browser testing, imported snippet compilation and language navigation before merge.
