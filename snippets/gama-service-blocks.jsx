@@ -28,7 +28,7 @@ export const GamaInfoCard = ({ title, icon, href, children }) => {
         {href && <span className="gama-guide-card-arrow" aria-hidden="true">↗</span>}
       </span>
       <span className="gama-guide-card-title">{title}</span>
-      <span className="gama-guide-card-body">{children}</span>
+      <div className="gama-guide-card-body">{children}</div>
     </>
   );
   return href ? (
