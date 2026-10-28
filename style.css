@@ -798,3 +798,5 @@
 .gama-portfolio :is(.gama-portfolio-hero,.gama-portfolio-cta) a:focus-visible{
   outline-color:#8df2b8;
 }
+
+.gama-svc-detail-display-web{box-shadow:15px 15px 0 #0c493e,0 15px 30px rgba(0,0,0,.28)}
