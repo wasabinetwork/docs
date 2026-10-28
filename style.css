@@ -847,3 +847,28 @@
   .gama-es .gama-svc-pricing-grid a{padding:20px 12px}
   .gama-es .gama-svc-pricing-grid strong{font-size:1.55rem}
 }
+
+
+/* Spanish Automation service: longer headlines and flow labels remain readable. */
+.gama-es .gama-svc-hero-automation{
+  background:radial-gradient(circle at 75% 32%,rgba(23,211,133,.14),transparent 43%),linear-gradient(125deg,#061520,#0d2530 65%,#09231f);
+}
+.gama-es .gama-svc-hero-automation h1{
+  font-size:clamp(2.5rem,4.45vw,4.85rem);
+  overflow-wrap:break-word;
+}
+.gama-es .gama-svc-hero-automation .gama-svc-scope-note{
+  color:#c7e7d8;line-height:1.6
+}
+.gama-es .gama-svc-product-auto>p{
+  max-width:100%;padding-inline:15px;line-height:1.65;
+  overflow-wrap:break-word
+}
+.gama-es .gama-svc-flow-box small{line-height:1.25;text-align:center}
+.gama-es #detalles-automatizacion{scroll-margin-top:90px}
+@media(max-width:610px){
+ .gama-es .gama-svc-hero-automation h1{font-size:clamp(2.34rem,8.1vw,3.65rem)}
+ .gama-es .gama-svc-product-auto>p{font-size:9px;letter-spacing:.045em}
+ .gama-es .gama-svc-flow-line{padding:0 8px;gap:4px}
+ .gama-es .gama-svc-flow-line>i{width:8px}
+}
