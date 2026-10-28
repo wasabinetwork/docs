@@ -222,3 +222,22 @@
 @media(prefers-reduced-motion:reduce){
  .gama-home *, .gama-portfolio *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
+
+
+/* Featured work on the homepage */
+.gama-home-featured{background:#edf8f0;color:#15382a}
+.gama-home-featured .gama-home-kicker{color:#128452}
+.gama-home-featured .gama-home-section-intro h2 span{color:#298d63}
+.gama-home-featured-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.gama-home-featured-card{position:relative;display:flex;flex-direction:column;align-items:flex-start;min-height:290px;border:1px solid rgba(153,245,195,.19);border-radius:18px;padding:27px 23px;overflow:hidden;background:linear-gradient(140deg,#0b2532,#0b5945);color:#f4fff8!important;transition:transform .23s ease,box-shadow .23s ease}
+.gama-home-featured-card::after{content:"";position:absolute;width:185px;height:185px;right:-60px;top:22px;border:1px dashed rgba(101,239,169,.29);border-radius:45%;transform:rotate(35deg);box-shadow:0 0 0 29px rgba(32,218,134,.035),0 0 0 58px rgba(32,218,134,.025);pointer-events:none}
+.gama-home-featured-card:hover{transform:translateY(-5px);box-shadow:0 25px 50px rgba(10,65,47,.16)}
+.gama-home-featured-atlas{background:radial-gradient(circle at 85% 10%,rgba(45,217,173,.19),transparent 43%),linear-gradient(140deg,#0b2839,#0a504b)}
+.gama-home-featured-ki{background:radial-gradient(circle at 80% 25%,rgba(45,217,173,.2),transparent 40%),linear-gradient(150deg,#132e30,#0a3a3f)}
+.gama-home-featured-kokonut{background:radial-gradient(circle at 80% 25%,rgba(131,227,81,.19),transparent 41%),linear-gradient(140deg,#0d2c28,#145237)}
+.gama-home-featured-meta{position:relative;z-index:1;font-size:9px;letter-spacing:.1em;font-weight:850;color:#8aefbc;margin-bottom:auto}
+.gama-home-featured-card strong{position:relative;z-index:1;font-size:clamp(1.48rem,2.2vw,2.12rem);letter-spacing:-.045em;line-height:1.08;margin:36px 0 10px}
+.gama-home-featured-card p{position:relative;z-index:1;font-size:.91rem;color:#b9ddd0}
+.gama-home-featured-action{position:relative;z-index:1;display:block;color:#90f0bd;margin-top:20px;font-weight:770;font-size:.83rem}
+.gama-home-featured-disclaimer{margin-top:14px!important;color:#658575;font-size:.76rem}
+@media(max-width:850px){.gama-home-featured-grid{grid-template-columns:1fr}}
