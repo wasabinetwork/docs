@@ -488,3 +488,10 @@
 @media(prefers-reduced-motion:reduce){
   .gama-services *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
 }
+
+
+/* Service overview variant and keyboard accessibility */
+.gama-svc-overview{background:radial-gradient(circle at 75% 35%,rgba(22,200,126,.12),transparent 40%),linear-gradient(120deg,#061520,#0d2530 68%,#09231f)}
+.gama-services a:focus-visible{outline:3px solid #13bd78;outline-offset:4px;border-radius:6px}
+.gama-svc-pathway:focus-visible{border-radius:17px}
+.gama-svc-network-node{pointer-events:none}
