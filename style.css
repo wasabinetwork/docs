@@ -241,3 +241,15 @@
 .gama-home-featured-action{position:relative;z-index:1;display:block;color:#90f0bd;margin-top:20px;font-weight:770;font-size:.83rem}
 .gama-home-featured-disclaimer{margin-top:14px!important;color:#658575;font-size:.76rem}
 @media(max-width:850px){.gama-home-featured-grid{grid-template-columns:1fr}}
+
+
+/* Illustrative variants give the four services their own visual identity. */
+.gama-home-art-axis-a{opacity:.9}
+.gama-home-service-web{border-top:3px solid #16a34a}
+.gama-home-service-auto{border-top:3px solid #07c983}
+.gama-home-service-it{border-top:3px solid #15803d}
+.gama-home-service-gov{border-top:3px solid #69b27b}
+.gama-home-service-art-web::before{background:rgba(27,170,114,.12)}
+.gama-home-service-art-auto::before{background:rgba(7,201,131,.14)}
+.gama-home-service-art-it::before{background:rgba(12,107,79,.16)}
+.gama-home-service-art-gov::before{background:rgba(68,139,76,.13)}
