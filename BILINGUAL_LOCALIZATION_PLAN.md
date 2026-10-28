@@ -1,15 +1,15 @@
 # GAMA Works — Bilingual Launch Roadmap
 
 **Phase:** Native Mintlify localization foundation, English + Spanish.
-**Status:** Spanish Home, Services, Portfolio, and WebReady are merged. The complete Automation translation is in the current review branch; merge only after successful Mintlify preview and copy review.
+**Status:** The complete Automation translation is merged. IT Services Spanish localization is in the current review branch; merge after Mintlify preview, copy and accessibility review.
 
 ## Product architecture
 
 - **English:** all existing routes remain in place (no moves, no redirects, no renamed files).
-- **Spanish:** `/es/`, `/es/services`, `/es/portfolio`, `/es/gama-web-ready-bundle`, and `/es/automation-workflow-design`, using native navigation under `navigation.languages`.
+- **Spanish:** `/es/`, `/es/services`, `/es/portfolio`, `/es/gama-web-ready-bundle`, `/es/automation-workflow-design`, and `/es/it-services`, using native navigation under `navigation.languages`.
 - The primary GAMA Works website stays on Mintlify. Atlas is an independent e-commerce OS initiative on its own subdomain.
 - Spanish marketing copy uses neutral, readable Latin American Spanish suitable for Dominican businesses.
-- Complex Spanish JSX lives in `snippets/gama-es.jsx`, `snippets/gama-webready-es.jsx`, and `snippets/gama-automation-es.jsx`, rendered through minimal MDX entrypoints to avoid the prior Mintlify editor parsing problem.
+- Complex Spanish JSX lives in `snippets/gama-es.jsx`, `snippets/gama-webready-es.jsx`, and `snippets/gama-automation-es.jsx`, and `snippets/gama-it-es.jsx`, rendered through minimal MDX entrypoints to avoid the prior Mintlify editor parsing problem.
 - Existing social image assets are reused rather than generating unapproved new artwork. Note that existing image text may still be in English; localized OG artwork is a future creative task.
 
 ## What this initial localization includes
@@ -20,13 +20,13 @@
 | Services overview | `/services` | `/es/services` | New Spanish visual overview |
 | Portfolio | `/portfolio` | `/es/portfolio` | New Spanish portfolio |
 | WebReady terms | `/gama-web-ready-bundle` | `/es/gama-web-ready-bundle` | Merged; complete Spanish guide |
-| Automation details | `/automation-workflow-design` | `/es/automation-workflow-design` | **Translated in current PR; preview/review required** |
-| IT details | `/it-services` | — | **Translation pending** |
+| Automation details | `/automation-workflow-design` | `/es/automation-workflow-design` | Merged; complete Spanish guide |
+| IT details | `/it-services` | `/es/it-services` | **Translated in current PR; preview/review required** |
 | Governance details | `/governance-funding-systems` | — | **Translation pending** |
 | About | `/background` | — | **Translation pending** |
 | Contact | `/contact` | — | **Translation pending** |
 
-**Important:** This is a **partial bilingual launch foundation**. Spanish Home and Services now route WebReady and Automation visitors to complete Spanish guides. IT, Governance, About, and Contact still lead to English pages; the Spanish pages explain this distinction. The Spanish menu intentionally exposes only translated pages. It must not be described as fully translated until all remaining public routes and policy terms are localized.
+**Important:** This is a **partial bilingual launch foundation**. Spanish Home and Services route WebReady, Automation, and IT visitors to their complete Spanish guides. Governance, About, and Contact still lead to English pages; notices identify these remaining gaps. The Spanish menu intentionally exposes only translated pages. It must not be described as fully translated until all remaining public routes and policy terms are localized.
 
 ## Translation principles
 
@@ -54,7 +54,7 @@
 
 ## Next implementation increment
 
-1. **WebReady is merged; Automation is translated in this review branch.** Complete IT Services and Governance & Funding next.
+1. **WebReady and Automation are merged; IT Services is translated in this review branch.** Complete Governance & Funding next.
 2. Localize About and Contact, including their calls to action and project-intake descriptions.
 3. Create localized social-sharing assets if desired.
 4. Audit language-specific SEO and test the full bilingual conversion flow end to end.
@@ -68,7 +68,7 @@
 - Do not imply an unconditional refund or delivery time, an ownership transfer before completion of the qualifying period, or that a trial and guarantee are the same protection.
 - The Spanish marketing page should be reviewed against the applicable service agreement; it does not replace the agreement.
 
-## Automation & Workflow Design localization audit (current PR)
+## Automation & Workflow Design localization audit (previously merged)
 
 - Public route: `/es/automation-workflow-design`; MDX entrypoint: `es/automation-workflow-design.mdx`.
 - Full Spanish guide: `snippets/service-content/automation-es.mdx`; visual component: `snippets/gama-automation-es.jsx`.
@@ -77,3 +77,14 @@
 - Retain custom scoping; there is **no fixed price, guaranteed business outcome, or unlimited AI autonomy** in this offer.
 - Keep the original booking URL `https://cal.com/wasabi/gama` and link to English-only Contact with a transparent note until its translation is ready.
 - Verify mobile diagram text, source-level contrast plus browser WCAG 2.2 AA checks, translated metadata and all in-language internal links before merging.
+
+
+## IT Services full localization audit (current PR)
+
+- Public route: `/es/it-services`; thin entrypoint: `es/it-services.mdx`; localized visual: `snippets/gama-it-es.jsx`.
+- Full Spanish guide: `snippets/service-content/it-es.mdx`.
+- Preserve the complete technical scope: applications and internal tools, hosting/cloud/deployments, domains/business email, APIs/integrations, migrations/rescue work, fractional technical support, engagement models, operating principles, suitability and all nine FAQs.
+- Retain the qualifications that there is **no guaranteed 24/7 emergency response**, formal penetration-testing service or regulated-industry compliance specialization without appropriate partners.
+- Ongoing support, response expectations and fees depend on written agreement; custom projects require discovery and a defined proposal.
+- Keep the English published booking destination unchanged while making Spanish WebReady, Automation, Home, and Services routes link directly to `/es/it-services`.
+- Preview must check Mintlify editor parsing, rich content, mobile overflow, the annotated IT systems illustration, WCAG 2.2 AA contrast/keyboard behavior and native i18n routing.
