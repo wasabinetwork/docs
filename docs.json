@@ -32,6 +32,13 @@
         ]
       },
       {
+        "tab": "Portfolio",
+        "icon": "layout-grid",
+        "pages": [
+          "portfolio"
+        ]
+      },
+      {
         "tab": "About",
         "icon": "users",
         "pages": [
