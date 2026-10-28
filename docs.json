@@ -72,7 +72,8 @@
             "icon": "briefcase",
             "pages": [
               "es/services",
-              "es/gama-web-ready-bundle"
+              "es/gama-web-ready-bundle",
+              "es/automation-workflow-design"
             ]
           },
           {
