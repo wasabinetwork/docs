@@ -71,7 +71,8 @@
             "tab": "Servicios",
             "icon": "briefcase",
             "pages": [
-              "es/services"
+              "es/services",
+              "es/gama-web-ready-bundle"
             ]
           },
           {
