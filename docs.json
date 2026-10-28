@@ -84,6 +84,20 @@
             "pages": [
               "es/portfolio"
             ]
+          },
+          {
+            "tab": "Sobre nosotros",
+            "icon": "user",
+            "pages": [
+              "es/background"
+            ]
+          },
+          {
+            "tab": "Contacto",
+            "icon": "message",
+            "pages": [
+              "es/contact"
+            ]
           }
         ]
       }

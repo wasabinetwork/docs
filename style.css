@@ -919,3 +919,126 @@
   .gama-es .gama-svc-gov-node small {font-size:7px;letter-spacing:.035em}
   .gama-es .gama-svc-gov-core small {font-size:8px}
 }
+
+
+/* ───────────────────────────────────────────────────────────────────────────
+   GAMA Works / Spanish About + Contact — editorial hero, high-contrast cards
+   Accessible dark text #112a22 on white, #f5fff9 on navy, forest links #076b43.
+   ─────────────────────────────────────────────────────────────────────────── */
+.gama-es-editorial-hero {
+  background:radial-gradient(circle at 76% 38%,rgba(19,208,131,.15),transparent 43%),linear-gradient(125deg,#061520,#0d2530 65%,#09231f);
+}
+.gama-es-editorial-hero h1{font-size:clamp(2.65rem,4.6vw,5.25rem);overflow-wrap:break-word}
+.gama-es-editorial-hero .gama-svc-scope-note{color:#c7e7d8;line-height:1.65}
+.gama-es-about-art,.gama-es-contact-art {
+  min-height:430px;position:relative;isolation:isolate;
+  border:1px solid #426b60;border-radius:23px;overflow:hidden;
+  background:radial-gradient(circle at 50% 44%,rgba(26,196,136,.15),transparent 53%),linear-gradient(145deg,#153e40,#09242d);
+  box-shadow:0 28px 65px rgba(0,0,0,.22),inset 0 1px rgba(255,255,255,.07);
+}
+.gama-es-about-art-top,.gama-es-contact-art-top{
+  position:absolute;top:21px;left:21px;right:21px;
+  display:flex;align-items:center;gap:7px;justify-content:space-between;
+  color:#bcf0d8;font-size:10px;letter-spacing:.085em;font-weight:840;line-height:1.55;
+}
+.gama-es-about-art-top span:last-child,.gama-es-contact-art-top span:last-child{margin-left:auto;white-space:nowrap;color:#8df2b8}
+.gama-es-about-art-timeline{
+  position:absolute;inset:73px 28px 67px 39px;display:grid;align-content:center;gap:25px;
+}
+.gama-es-about-art-timeline::before{
+  content:"";position:absolute;top:15px;bottom:15px;left:17px;
+  border-left:2px dashed #6ddfac;opacity:.67
+}
+.gama-es-about-art-entry{
+  display:grid;grid-template-columns:93px minmax(0,1fr);grid-template-rows:auto auto;
+  position:relative;z-index:1;align-items:center;column-gap:13px;
+  padding:12px 16px;border:1px solid #669b85;border-radius:13px;
+  background:linear-gradient(120deg,#185448,#0a3537);
+  box-shadow:0 12px 30px rgba(0,0,0,.13)
+}
+.gama-es-about-art-entry b{grid-row:1/3;color:#a6f3c7;font-size:25px;letter-spacing:-.055em;line-height:1}
+.gama-es-about-art-entry span{color:#f5fff9;font-size:12px;font-weight:900;letter-spacing:.08em}
+.gama-es-about-art-entry small{color:#d3eee1;font-size:10px;line-height:1.5}
+.gama-es-about-art-bottom,.gama-es-contact-art-bottom{
+  position:absolute;bottom:19px;left:20px;right:20px;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+  border-top:1px solid #507a6a;padding-top:14px;color:#c7e7d8;
+  font-size:11px;line-height:1.5;font-weight:650;
+}
+.gama-es-manifesto{background:#e4f5eb;color:#112a22;padding:83px 0}
+.gama-es-manifesto-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.83fr);gap:10%;align-items:center}
+.gama-es-manifesto .gama-svc-kicker{color:#076b43}
+.gama-es-manifesto h2{font-size:clamp(2.15rem,3.75vw,3.75rem);margin:18px 0 0;color:#112a22}
+.gama-es-manifesto h2 em{font-style:normal;color:#076b43}
+.gama-es-manifesto-grid>div:last-child p{font-size:1.07rem;color:#38594c;line-height:1.7;margin:0 0 18px}
+.gama-es-manifesto-grid>div:last-child p:last-child{margin-bottom:0}
+.gama-es-about .gama-services-detail-area:before{content:"HISTORIA, MISIÓN Y EXPERIENCIA"}
+.gama-es-contact-art-stack{position:absolute;inset:83px 28px 66px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+.gama-es-contact-art-tile{
+  display:flex;align-items:center;gap:19px;
+  background:linear-gradient(125deg,#185849,#0d3b3b);
+  padding:20px;border:1px solid #76b898;border-radius:15px;
+}
+.gama-es-contact-art-symbol{
+  flex:0 0 58px;height:58px;display:grid;place-items:center;
+  border-radius:13px;background:#d6f5e4;color:#07543b;font-size:28px;font-weight:800;
+}
+.gama-es-contact-art-tile>div{display:grid;gap:7px;min-width:0}
+.gama-es-contact-art-tile strong{font-size:13px;letter-spacing:.085em;color:#f5fff9}
+.gama-es-contact-art-tile small{font-size:11px;color:#c7e7d8;overflow-wrap:anywhere;line-height:1.5}
+.gama-es-contact-art-tile>b{margin-left:auto;font-size:20px;color:#a6f3c7}
+.gama-es-contact-art-connector{text-align:center;color:#8df2b8;font-weight:900;font-size:16px}
+.gama-es-contact-options{background:#f4f9f6;color:#112a22;padding:95px 0}
+.gama-es-contact-options .gama-svc-kicker{color:#076b43}
+.gama-es-contact-channels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.gama-es-contact-channel{
+  min-height:305px;display:flex;align-items:flex-start;flex-direction:column;
+  background:#fff;border:2px solid #698a78;border-radius:18px;
+  padding:26px;color:#112a22!important;
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+}
+.gama-es-contact-channel:hover{transform:translateY(-4px);border-color:#07543b;box-shadow:0 22px 43px rgba(13,72,49,.13);text-decoration:none}
+.gama-es-contact-channel-meta{width:100%;display:flex;justify-content:space-between;align-items:center;color:#076b43;font-size:12px;font-weight:850;letter-spacing:.1em}
+.gama-es-contact-channel-meta>span{font-size:24px;line-height:1}
+.gama-es-contact-channel-icon{display:grid;place-items:center;width:64px;height:64px;border-radius:16px;background:#e4f5eb;color:#076b43;font-size:32px;border:1px solid #698a78;margin:15px 0}
+.gama-es-contact-channel h3{color:#112a22;font-size:1.75rem;line-height:1.2}
+.gama-es-contact-channel p{color:#38594c;font-size:1.03rem;line-height:1.65;margin:10px 0}
+.gama-es-contact-channel-action{display:flex;justify-content:space-between;align-items:center;width:100%;border-top:1px solid #698a78;padding-top:15px;margin-top:auto;color:#076b43;font-size:.92rem;font-weight:800;overflow-wrap:anywhere}
+.gama-es-contact .gama-services-detail-area:before{content:"GUÍA PARA CONSULTAS Y PROYECTOS"}
+.gama-es-about .gama-services-detail-area,.gama-es-contact .gama-services-detail-area{scroll-margin-top:90px}
+.gama-es-contact .gama-services-detail-area pre{
+  max-width:100%;overflow-x:auto;background:#102b30;
+  border:2px solid #527466;border-radius:13px;padding:20px;
+  color:#f5fff9;font-size:.9rem;line-height:1.7;
+}
+.gama-es-contact .gama-services-detail-area pre code{color:#f5fff9}
+.gama-es-contact .gama-services-detail-area a:focus-visible,.gama-es-about .gama-services-detail-area a:focus-visible{outline:3px solid #076b43;outline-offset:4px}
+.gama-es-editorial-hero a:focus-visible{outline-color:#8df2b8;box-shadow:0 0 0 5px #0a1c25}
+@media(max-width:1050px){
+ .gama-es-manifesto-grid{grid-template-columns:1fr;gap:25px}
+ .gama-es-about-art,.gama-es-contact-art{max-width:670px;width:100%;margin:auto}
+}
+@media(max-width:610px){
+ .gama-es-editorial-hero h1{font-size:clamp(2.38rem,8.6vw,3.85rem)}
+ .gama-es-about-art,.gama-es-contact-art{min-height:360px}
+ .gama-es-about-art-timeline{inset:64px 16px 60px 27px;gap:14px}
+ .gama-es-about-art-entry{grid-template-columns:76px minmax(0,1fr);padding:10px}
+ .gama-es-about-art-entry b{font-size:21px}
+ .gama-es-about-art-entry span{font-size:10px}
+ .gama-es-about-art-entry small{font-size:9px}
+ .gama-es-contact-art-stack{inset:70px 15px 58px}
+ .gama-es-contact-art-tile{padding:13px;gap:11px}
+ .gama-es-contact-art-symbol{flex-basis:43px;height:43px;font-size:23px}
+ .gama-es-contact-art-tile small{font-size:10px}
+ .gama-es-contact-options,.gama-es-manifesto{padding:69px 0}
+ .gama-es-contact-channels{grid-template-columns:1fr}
+ .gama-es-contact-channel{min-height:240px}
+ .gama-es-contact .gama-services-detail-area pre{padding:13px;font-size:.81rem}
+}
+@media(prefers-reduced-motion:reduce){.gama-es-contact-channel{transition:none!important;transform:none!important}}
+
+
+/* Contact-specific subtle lighting; shared hero remains unchanged. */
+.gama-es-contact-hero{
+  background:radial-gradient(circle at 77% 35%,rgba(24,204,137,.18),transparent 44%),linear-gradient(125deg,#061520,#0d2530 65%,#09231f);
+}
