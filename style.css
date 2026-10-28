@@ -758,3 +758,20 @@
 @media(prefers-reduced-motion:reduce){
  .gama-services :is(.gama-svc-pathway,.gama-svc-outcome-row,.gama-svc-contact-card,.gama-guide-card-link){transition:none!important;transform:none!important}
 }
+
+
+/* WCAG non-text contrast: make essential white-card outlines >= 3:1.
+   #698a78 is 3.81:1 against white; hover uses #07543b. */
+.gama-services :is(.gama-svc-pathway,.gama-svc-contact-card,.gama-svc-offering,.gama-svc-engagement-card,.gama-guide-card,.gama-guide-panel){border-color:#698a78}
+.gama-svc-outcome-board{border-color:#698a78}
+.gama-services :is(.gama-svc-pathway,.gama-svc-contact-card,.gama-guide-card-link):hover{border-color:#07543b}
+.gama-services :is(.gama-svc-pricing,.gama-svc-network) :is(a,button,summary):focus-visible{
+  outline-color:#8df2b8;
+  box-shadow:0 0 0 6px #0a1c25;
+}
+/* Keep readable captions even when browser overrides surrounding theme. */
+.gama-guide-card-body :is(p,ul,ol,li){color:#38594c!important}
+.gama-guide-card-body :is(strong,b){color:#112a22!important}
+.gama-guide-note :is(p,ul,ol,li){color:#38594c!important}
+.gama-guide-note-warning :is(p,ul,ol,li){color:#513a15!important}
+.gama-services-detail-area .gama-guide-card a:not(.gama-guide-card-link){color:#076b43!important}
