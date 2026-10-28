@@ -775,3 +775,26 @@
 .gama-guide-note :is(p,ul,ol,li){color:#38594c!important}
 .gama-guide-note-warning :is(p,ul,ol,li){color:#513a15!important}
 .gama-services-detail-area .gama-guide-card a:not(.gama-guide-card-link){color:#076b43!important}
+
+
+/* Site-wide companion fixes discovered in the contrast inventory.
+   These only adjust under-contrast text/focus, not approved layouts. */
+.gama-home-service-top{color:#38594c}
+.gama-home-services .gama-home-kicker,
+.gama-home-how .gama-home-kicker,
+.gama-home-feature-copy .gama-home-kicker,
+.gama-home-featured .gama-home-kicker,
+.gama-portfolio-gallery .gama-portfolio-kicker{color:#076b43}
+.gama-home-price span,.gama-home-small,.gama-home-how-intro,
+.gama-home-process p,.gama-portfolio-clarity p,
+.gama-home-featured-disclaimer{color:#38594c}
+.gama-home-featured .gama-home-section-intro h2 span{color:#076b43}
+.gama-home a:focus-visible,.gama-portfolio a:focus-visible{
+  outline:3px solid #076b43;outline-offset:4px;border-radius:6px
+}
+.gama-home :is(.gama-home-hero,.gama-home-cta,.gama-home-featured-card),
+.gama-portfolio :is(.gama-portfolio-hero,.gama-portfolio-cta,.gama-work-art){position:relative}
+.gama-home :is(.gama-home-hero,.gama-home-cta,.gama-home-featured-card) a:focus-visible,
+.gama-portfolio :is(.gama-portfolio-hero,.gama-portfolio-cta) a:focus-visible{
+  outline-color:#8df2b8;
+}
