@@ -1042,3 +1042,17 @@
 .gama-es-contact-hero{
   background:radial-gradient(circle at 77% 35%,rgba(24,204,137,.18),transparent 44%),linear-gradient(125deg,#061520,#0d2530 65%,#09231f);
 }
+
+
+/* Email components: keep recognizable visible address even when upstream
+   email-obfuscation scripts fail; preserve text selection and keyboard links. */
+.gama-visible-email{display:inline;white-space:normal;overflow-wrap:anywhere;font:inherit;color:inherit;letter-spacing:normal}
+.gama-visible-email>span{display:inline;color:inherit;font:inherit}
+.gama-visible-email-link{color:#076b43;text-decoration:underline;text-underline-offset:3px;font-weight:750}
+.gama-visible-email-link:focus-visible{outline:3px solid #076b43;outline-offset:4px}
+.gama-es-contact-art .gama-visible-email,.gama-es-contact-art .gama-visible-email>span{color:#c7e7d8}
+.gama-es-contact-channel-action .gama-visible-email{color:#076b43}
+.gama-en-editorial .gama-services-detail-area{scroll-margin-top:90px}
+.gama-en-editorial .gama-es-manifesto .gama-svc-kicker{color:#076b43}
+.gama-en-editorial .gama-svc-hero h1{overflow-wrap:break-word}
+@media(max-width:610px){.gama-en-editorial .gama-svc-hero h1{font-size:clamp(2.34rem,8.2vw,3.7rem)}}
