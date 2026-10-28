@@ -181,13 +181,13 @@ def fetch(path, base, timeout):
         result["issues"].append(issue("warning", "h1_count", "H1 elements found: " + str(len(parser.h1s))))
     if not parser.canonical:
         result["issues"].append(issue("warning", "canonical_unconfirmed", "No canonical link in response HTML"))
-    elif normalize_path(parser.canonical[0], base) != path:
+    elif normalize_path(parser.canonical[0], base) != normalize_path(path, base):
         result["issues"].append(issue("warning", "canonical_mismatch", str(parser.canonical)))
     paired = PAIRS[path]
     opposite = "en" if expected_lang == "es" else "es"
     if not parser.alternates.get(opposite):
         result["issues"].append(issue("warning", "hreflang_missing", "No " + opposite + " alternate for " + paired))
-    elif normalize_path(parser.alternates[opposite], base) != paired:
+    elif normalize_path(parser.alternates[opposite], base) != normalize_path(paired, base):
         result["issues"].append(issue("warning", "hreflang_mismatch", "Expected " + paired + "; got " + parser.alternates[opposite]))
     if "noindex" in parser.meta.get("robots", "").lower():
         result["issues"].append(issue("warning", "noindex", "Page may be excluded from search"))
