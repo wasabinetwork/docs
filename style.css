@@ -495,3 +495,9 @@
 .gama-services a:focus-visible{outline:3px solid #13bd78;outline-offset:4px;border-radius:6px}
 .gama-svc-pathway:focus-visible{border-radius:17px}
 .gama-svc-network-node{pointer-events:none}
+
+
+/* Keep comparison and pricing tables usable on narrow phones. */
+@media(max-width:610px){
+  .gama-services-detail-area table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
