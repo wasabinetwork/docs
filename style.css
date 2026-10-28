@@ -813,3 +813,22 @@
 .gama-svc-detail-visual-automation{background:radial-gradient(circle at 50% 47%,rgba(28,214,133,.25),transparent 55%),linear-gradient(145deg,#10393d,#0a1c25)}
 .gama-svc-detail-visual-it{background:radial-gradient(circle at 46% 45%,rgba(33,191,146,.19),transparent 54%),linear-gradient(140deg,#132c43,#0a1c25)}
 .gama-svc-detail-visual-governance{background:radial-gradient(circle at 53% 48%,rgba(47,199,134,.2),transparent 58%),linear-gradient(142deg,#123a37,#0a1c25)}
+
+
+/* Phase 3: Spanish-first responsive overrides, preserving approved EN layouts. */
+.gama-es .gama-es-service-icon{position:relative;z-index:1;display:grid;place-items:center;width:80px;height:80px;border-radius:19px;border:2px solid #579c7b;background:#d5f2e2;color:#076b43;font-size:43px;font-weight:800;box-shadow:12px 12px 0 rgba(29,137,79,.1)}
+.gama-es .gama-es-language-note{font-size:.88rem;line-height:1.65;color:#38594c;background:#e4f5eb;border-left:4px solid #076b43;border-radius:4px;padding:12px 18px;margin-top:19px}
+.gama-es .gama-svc-outcomes .gama-svc-section-intro h2 em{color:#076b43}
+.gama-es :is(.gama-home-featured-card,.gama-work-card) :focus-visible{outline:3px solid #8df2b8;outline-offset:4px}
+.gama-es .gama-home-featured-card{min-height:325px}
+.gama-es .gama-work-art-label small{max-width:225px;font-size:10px;line-height:1.5;letter-spacing:.09em}
+.gama-es .gama-svc-outcome-priority{overflow-wrap:anywhere}
+.gama-es .gama-svc-outcome-row>strong{overflow-wrap:anywhere}
+.gama-es .gama-home-hero h1{font-size:clamp(2.7rem,4.7vw,5.3rem)}
+@media(max-width:610px){
+.gama-es .gama-home-hero h1{font-size:clamp(2.45rem,9.2vw,4rem)}
+.gama-es .gama-home-hero-art{min-height:400px}
+.gama-es .gama-home-art-tile{min-height:105px}
+.gama-es .gama-svc-outcome-row{gap:13px}
+.gama-es .gama-home-featured-card{min-height:270px}
+}

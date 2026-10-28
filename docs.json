@@ -12,44 +12,75 @@
     "dark": "/images/w.png"
   },
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Home",
-        "icon": "house",
-        "pages": [
-          "index"
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Home",
+            "icon": "house",
+            "pages": [
+              "index"
+            ]
+          },
+          {
+            "tab": "Services",
+            "icon": "briefcase",
+            "pages": [
+              "services",
+              "gama-web-ready-bundle",
+              "automation-workflow-design",
+              "it-services",
+              "governance-funding-systems"
+            ]
+          },
+          {
+            "tab": "Portfolio",
+            "icon": "layout-grid",
+            "pages": [
+              "portfolio"
+            ]
+          },
+          {
+            "tab": "About",
+            "icon": "users",
+            "pages": [
+              "background"
+            ]
+          },
+          {
+            "tab": "Contact",
+            "icon": "message-circle",
+            "pages": [
+              "contact"
+            ]
+          }
         ]
       },
       {
-        "tab": "Services",
-        "icon": "briefcase",
-        "pages": [
-          "services",
-          "gama-web-ready-bundle",
-          "automation-workflow-design",
-          "it-services",
-          "governance-funding-systems"
-        ]
-      },
-      {
-        "tab": "Portfolio",
-        "icon": "layout-grid",
-        "pages": [
-          "portfolio"
-        ]
-      },
-      {
-        "tab": "About",
-        "icon": "users",
-        "pages": [
-          "background"
-        ]
-      },
-      {
-        "tab": "Contact",
-        "icon": "message-circle",
-        "pages": [
-          "contact"
+        "language": "es",
+        "tabs": [
+          {
+            "tab": "Inicio",
+            "icon": "house",
+            "pages": [
+              "es/index"
+            ]
+          },
+          {
+            "tab": "Servicios",
+            "icon": "briefcase",
+            "pages": [
+              "es/services"
+            ]
+          },
+          {
+            "tab": "Portafolio",
+            "icon": "layout-grid",
+            "pages": [
+              "es/portfolio"
+            ]
+          }
         ]
       }
     ]
