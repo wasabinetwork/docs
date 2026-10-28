@@ -832,3 +832,18 @@
 .gama-es .gama-svc-outcome-row{gap:13px}
 .gama-es .gama-home-featured-card{min-height:270px}
 }
+
+
+/* Full Spanish WebReady detail page: comfortable text expansion, shared visual language. */
+.gama-es .gama-svc-hero-webready{
+  background:radial-gradient(circle at 75% 32%,rgba(23,211,133,.14),transparent 43%),linear-gradient(125deg,#061520,#0d2530 65%,#09231f);
+}
+.gama-es .gama-svc-hero-webready h1{font-size:clamp(2.65rem,4.65vw,5.05rem);overflow-wrap:break-word}
+.gama-es .gama-svc-hero-webready .gama-svc-scope-note{color:#bcdcca;line-height:1.6}
+.gama-es .gama-svc-pricing-grid em{line-height:1.6}
+.gama-es .gama-services-detail-area{scroll-margin-top:90px}
+@media(max-width:610px){
+  .gama-es .gama-svc-hero-webready h1{font-size:clamp(2.45rem,8.5vw,3.75rem)}
+  .gama-es .gama-svc-pricing-grid a{padding:20px 12px}
+  .gama-es .gama-svc-pricing-grid strong{font-size:1.55rem}
+}
