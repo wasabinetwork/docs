@@ -10,12 +10,10 @@ keywords: ["digital services", "workflow automation", "website design", "custom 
 hideFooterPagination: true
 ---
 
-import { GamaServicesOverview, GamaServiceExperience } from '/snippets/gama-services.jsx';
-import OriginalServiceGuide from '/snippets/service-content/services.mdx';
+import { GamaServicesOverview } from '/snippets/gama-services.jsx';
+import { GamaServicesDeepDive } from '/snippets/gama-services-deep-dive.jsx';
 
 <div className="gama-services">
   <GamaServicesOverview />
-  <section id="service-details" className="gama-services-detail-area">
-    <OriginalServiceGuide />
-  </section>
+  <GamaServicesDeepDive />
 </div>
