@@ -1,3 +1,4 @@
+import { GamaEmailText } from '/snippets/gama-email.jsx';
 /**
  * GAMA Works — páginas comerciales en español (es).
  * Componentes visuales separados del MDX para mantener compatible
@@ -69,7 +70,7 @@ export const GamaInicioEs = () => (
     </section>
     <section className="gama-home-section gama-home-how" aria-labelledby="gama-inicio-metodo"><div className="gama-home-container gama-home-how-grid"><div><p className="gama-home-kicker">CÓMO TRABAJAMOS</p><h2 id="gama-inicio-metodo">Claridad antes que complejidad.</h2><p className="gama-home-how-intro">La mejor solución no siempre es la más grande. Partimos del problema, definimos un alcance útil y construimos algo que tu equipo pueda mantener.</p></div><ol className="gama-home-process"><li><span>01</span><div><h3>Entender</h3><p>Identificar el problema, las personas y las limitaciones.</p></div></li><li><span>02</span><div><h3>Diseñar</h3><p>Elegir la solución adecuada para el momento del negocio.</p></div></li><li><span>03</span><div><h3>Implementar y acompañar</h3><p>Acordar el alcance, entregar documentación y mejorar según corresponda.</p></div></li></ol></div></section>
     <section className="gama-home-cta"><div className="gama-home-container gama-home-cta-inner"><p className="gama-home-kicker">HABLEMOS DE LO QUE IMPORTA</p><h2>¿Qué está frenando a tu empresa?</h2><p>Cuéntanos el problema y busquemos juntos el siguiente paso.</p><div className="gama-home-actions gama-home-cta-actions"><EsAction href="https://cal.com/wasabi/gama">Agendar una conversación</EsAction><EsAction href="/es/contact" secondary>Enviar detalles del proyecto</EsAction></div></div></section>
-    <footer className="gama-home-footer"><div className="gama-home-container gama-home-footer-inner"><span><strong>GAMA Works</strong> · Soluciones digitales prácticas</span><a href="mailto:hello@gama.works">hello@gama.works</a><a href="/es/services">Servicios</a><a href="/es/portfolio">Portafolio</a></div></footer>
+    <footer className="gama-home-footer"><div className="gama-home-container gama-home-footer-inner"><span><strong>GAMA Works</strong> · Soluciones digitales prácticas</span><a href="mailto:hello%40gama.works"><GamaEmailText /></a><a href="/es/services">Servicios</a><a href="/es/portfolio">Portafolio</a></div></footer>
   </div>
 );
 
