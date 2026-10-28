@@ -106,13 +106,13 @@
   "navbar": {
     "links": [
       {
-        "label": "Email Us",
-        "href": "mailto:hello@gama.works"
+        "label": "Email / Correo",
+        "href": "mailto:hello%40gama.works"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Book a Call",
+      "label": "Book / Agendar",
       "href": "https://cal.com/wasabi/gama"
     }
   },
