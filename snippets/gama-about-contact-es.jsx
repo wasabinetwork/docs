@@ -1,10 +1,11 @@
+import { GamaEmailText } from '/snippets/gama-email.jsx';
 /**
  * GAMA Works: Spanish About + Contact experience.
  * Keeps public MDX minimal, and uses the approved Services typography,
  * contrast-safe palettes and responsive styles.
  */
 const channels = [
-  { number: "01", title: "Escríbenos", subtitle: "Cuéntanos qué necesitas mejorar.", action: "hello@gama.works", href: "mailto:hello@gama.works?subject=GAMA%20Works%20Project%20Inquiry", icon: "✉" },
+  { number: "01", title: "Escríbenos", subtitle: "Cuéntanos qué necesitas mejorar.", action: "Correo empresarial", href: "mailto:hello%40gama.works?subject=GAMA%20Works%20Project%20Inquiry", icon: "✉" },
   { number: "02", title: "Conversemos", subtitle: "Explora una solución con alcance realista.", action: "Agendar conversación", href: "https://cal.com/wasabi/gama", icon: "◷" }
 ];
 
@@ -65,7 +66,7 @@ export const GamaContactEs = () => (
           <h1 id="gama-contact-title">Trae el problema.<br /><em>Busquemos el siguiente paso.</em></h1>
           <p className="gama-svc-lead">Un sitio web, una automatización, una aplicación personalizada o un sistema de coordinación: empieza contándonos qué quieres mejorar.</p>
           <div className="gama-svc-actions">
-            <a className="gama-svc-button gama-svc-button-primary" href="mailto:hello@gama.works?subject=GAMA%20Works%20Project%20Inquiry">Enviar consulta <span aria-hidden="true">↗</span></a>
+            <a className="gama-svc-button gama-svc-button-primary" href="mailto:hello%40gama.works?subject=GAMA%20Works%20Project%20Inquiry">Enviar consulta <span aria-hidden="true">↗</span></a>
             <a className="gama-svc-button gama-svc-button-outline" href="https://cal.com/wasabi/gama">Agendar conversación <span aria-hidden="true">↗</span></a>
           </div>
           <p className="gama-svc-scope-note">Consultas de proyectos · Primer contacto sin especificaciones técnicas</p>
@@ -73,7 +74,7 @@ export const GamaContactEs = () => (
         <div className="gama-es-contact-art" role="img" aria-label="Dos vías principales para contactar a GAMA Works: enviar un correo electrónico o agendar una conversación inicial.">
           <div className="gama-es-contact-art-top"><span className="gama-svc-dot" aria-hidden="true"></span>DEL RETO A UNA CONVERSACIÓN <span>01—02</span></div>
           <div className="gama-es-contact-art-stack">
-            <div className="gama-es-contact-art-tile"><span className="gama-es-contact-art-symbol">✉</span><div><strong>ESCRIBIR</strong><small>hello@gama.works</small></div><b aria-hidden="true">↗</b></div>
+            <div className="gama-es-contact-art-tile"><span className="gama-es-contact-art-symbol">✉</span><div><strong>ESCRIBIR</strong><small><GamaEmailText /></small></div><b aria-hidden="true">↗</b></div>
             <div className="gama-es-contact-art-connector" aria-hidden="true">↓</div>
             <div className="gama-es-contact-art-tile"><span className="gama-es-contact-art-symbol">◷</span><div><strong>CONVERSAR</strong><small>Conocer el problema y acordar el alcance</small></div><b aria-hidden="true">↗</b></div>
           </div>
