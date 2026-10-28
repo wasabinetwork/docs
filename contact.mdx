@@ -8,6 +8,8 @@ keywords: ["contact GAMA Works", "book consultation", "business project inquiry"
 "og:image": "/images/og-contact.png"
 "twitter:image": "/images/og-contact.png"
 ---
+import { GamaEmailAddress, GamaEmailText } from '/snippets/gama-email.jsx';
+
 
 ## Tell Us What You're Trying to Build or Improve
 
@@ -18,8 +20,8 @@ Whether you need a professional website, a more efficient workflow, custom techn
 You do not need to know which tools, platforms, or technologies are required before contacting us.
 
 <Columns cols={2}>
-  <Card title="Email GAMA Works" icon="mail" href="mailto:hello@gama.works?subject=GAMA%20Works%20Project%20Inquiry">
-    **hello@gama.works** — send a short overview of your needs, questions, or project.
+  <Card title="Email GAMA Works" icon="mail" href="mailto:hello%40gama.works?subject=GAMA%20Works%20Project%20Inquiry">
+    **<GamaEmailText />** — send a short overview of your needs, questions, or project.
   </Card>
   <Card title="Book a Discovery Conversation" icon="calendar" href="https://cal.com/wasabi/gama">
     Choose an available meeting time to discuss your challenge and a potential next step.
@@ -52,7 +54,7 @@ GAMA Works has four distinct service pathways. Select the closest fit, or send a
 </Columns>
 
 <Check>
-  **Not sure where to start?** Describe the challenge by email at [hello@gama.works](mailto:hello@gama.works?subject=Help%20Me%20Find%20the%20Right%20GAMA%20Works%20Service). We can help identify whether a packaged solution, focused assessment, or custom engagement makes sense.
+  **Not sure where to start?** Describe the challenge by email at <GamaEmailAddress subject={decodeURIComponent("Help%20Me%20Find%20the%20Right%20GAMA%20Works%20Service")} />. We can help identify whether a packaged solution, focused assessment, or custom engagement makes sense.
 </Check>
 
 ---
@@ -87,8 +89,8 @@ Preferred next step:
 Additional context:
 ```
 
-<Card title="Send Your Project Inquiry" icon="send" href="mailto:hello@gama.works?subject=GAMA%20Works%20Project%20Inquiry">
-  Open an email to hello@gama.works with your project overview.
+<Card title="Send Your Project Inquiry" icon="send" href="mailto:hello%40gama.works?subject=GAMA%20Works%20Project%20Inquiry">
+  Open an email to <GamaEmailText /> with your project overview.
 </Card>
 
 ---
@@ -177,7 +179,7 @@ Additional context:
 
 ## Existing Clients and Support
 
-Already working with GAMA Works? Use **[hello@gama.works](mailto:hello@gama.works?subject=Existing%20Client%20Support%20Request)** and include the project or service name, a concise description of the issue, and any relevant non-sensitive details.
+Already working with GAMA Works? Use **<GamaEmailAddress subject={decodeURIComponent("Existing%20Client%20Support%20Request")} />** and include the project or service name, a concise description of the issue, and any relevant non-sensitive details.
 
 Support availability, included changes, and response commitments depend on your active service agreement or subscription. A general contact message does not create an emergency support arrangement.
 
@@ -187,7 +189,7 @@ For WebReady, consult the [bundle details and applicable support terms](/gama-we
 
 ## Other Ways to Connect
 
-The primary business contact channel is **hello@gama.works**. Additional community and professional channels already associated with the GAMA Works founder are available below, but should not be treated as a replacement for formal project or support communications.
+The primary business contact channel is **<GamaEmailText />**. Additional community and professional channels already associated with the GAMA Works founder are available below, but should not be treated as a replacement for formal project or support communications.
 
 <Columns cols={2}>
   <Card title="WhatsApp" icon="message-circle" href="https://wa.me/message/V63SDXRFFETNN1">
@@ -223,7 +225,7 @@ The primary business contact channel is **hello@gama.works**. Additional communi
     Potentially. A project may combine IT Services, workflow design, and governance or funding operations. We will identify dependencies and scope each workstream before committing.
   </Accordion>
   <Accordion title="Is booking a call the only way to get started?">
-    No. You can email [hello@gama.works](mailto:hello@gama.works) first. A meeting may be suggested if it would help clarify the work.
+    No. You can email <GamaEmailAddress /> first. A meeting may be suggested if it would help clarify the work.
   </Accordion>
   <Accordion title="Will you need credentials or access to review my request?">
     Not for the initial inquiry. If technical assessment or implementation later requires access, permissions and security procedures should be agreed as part of the engagement.
@@ -240,7 +242,7 @@ The primary business contact channel is **hello@gama.works**. Additional communi
 **Practical systems. Clear next steps. Long-term usefulness.**
 
 <Columns cols={2}>
-  <Card title="Email hello@gama.works" icon="mail" href="mailto:hello@gama.works?subject=GAMA%20Works%20Project%20Inquiry">
+  <Card title="Email <GamaEmailText />" icon="mail" href="mailto:hello%40gama.works?subject=GAMA%20Works%20Project%20Inquiry">
     Share a brief project inquiry and the outcome you're working toward.
   </Card>
   <Card title="Book a Meeting" icon="calendar" href="https://cal.com/wasabi/gama">
