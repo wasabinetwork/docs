@@ -24,7 +24,7 @@ const WebReadyVisualEs = () => (
 const inclusiones = [
   ["Sitio web, alojamiento y correo", "Una presencia digital profesional, con la configuración esencial incluida dentro del alcance aprobado."],
   ["Respaldos y soporte de lanzamiento", "Copias de seguridad y 90 días de soporte complementario para incidencias cubiertas después de la publicación."],
-  ["Plan mensual o anual", "US$29.99 al mes, con garantía condicional de devolución de 30 días, o US$299.98 al año, con prueba gratuita condicional de 30 días y un dominio estándar elegible para el primer año."]
+  ["Plan mensual o anual", "$29.99 al mes, con garantía condicional de devolución de 30 días, o $299.98 al año, con prueba gratuita condicional de 30 días y un dominio estándar elegible para el primer año."]
 ];
 
 export const GamaWebReadyEs = () => (
@@ -49,12 +49,12 @@ export const GamaWebReadyEs = () => (
       <div className="gama-svc-container gama-svc-pricing-grid">
         <a href="https://cal.com/wasabi/gama-webready-bundle-monthly">
           <span>PLAN MENSUAL</span>
-          <strong>US$29.99 <small>/ mes</small></strong>
+          <strong>$29.99 <small>/ mes</small></strong>
           <em>Garantía de devolución de 30 días, sujeta a las condiciones del servicio ↗</em>
         </a>
         <a href="https://cal.com/wasabi/gama-webready-bundle-yearly">
           <span>PLAN ANUAL</span>
-          <strong>US$299.98 <small>/ año</small></strong>
+          <strong>$299.98 <small>/ año</small></strong>
           <em>Prueba gratuita de 30 días y dominio estándar elegible el primer año, sujetos a condiciones ↗</em>
         </a>
       </div>
