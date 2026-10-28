@@ -872,3 +872,22 @@
  .gama-es .gama-svc-flow-line{padding:0 8px;gap:4px}
  .gama-es .gama-svc-flow-line>i{width:8px}
 }
+
+
+/* Full Spanish IT Services page: accessible text expansion and modular art. */
+.gama-es .gama-svc-hero-it {
+  background:radial-gradient(circle at 75% 32%,rgba(23,211,133,.14),transparent 43%),linear-gradient(125deg,#061520,#0d2530 65%,#09231f);
+}
+.gama-es .gama-svc-hero-it h1{
+  font-size:clamp(2.5rem,4.45vw,4.9rem);
+  overflow-wrap:break-word;
+}
+.gama-es .gama-svc-hero-it .gama-svc-scope-note{color:#c7e7d8;line-height:1.6}
+.gama-es .gama-svc-it-core strong{line-height:1.4}
+.gama-es #detalles-it{scroll-margin-top:90px}
+@media(max-width:610px){
+  .gama-es .gama-svc-hero-it h1{font-size:clamp(2.35rem,8.1vw,3.65rem)}
+  .gama-es .gama-svc-it-core{min-height:114px}
+  .gama-es .gama-svc-it-core strong{overflow-wrap:anywhere;line-height:1.5}
+  .gama-es .gama-svc-it-node small{font-size:9px;letter-spacing:.03em}
+}
