@@ -1036,3 +1036,9 @@
  .gama-es-contact .gama-services-detail-area pre{padding:13px;font-size:.81rem}
 }
 @media(prefers-reduced-motion:reduce){.gama-es-contact-channel{transition:none!important;transform:none!important}}
+
+
+/* Contact-specific subtle lighting; shared hero remains unchanged. */
+.gama-es-contact-hero{
+  background:radial-gradient(circle at 77% 35%,rgba(24,204,137,.18),transparent 44%),linear-gradient(125deg,#061520,#0d2530 65%,#09231f);
+}
