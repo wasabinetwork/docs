@@ -501,3 +501,315 @@
 @media(max-width:610px){
   .gama-services-detail-area table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
 }
+
+
+
+/* ───────────────────────────────────────────────────────────────────────────
+   GAMA Works · WCAG 2.2 AA Services overhaul
+   High-contrast pairs: ink #112a22 on #fff (15.24:1), body #38594c on
+   #fff (7.77:1), forest link #076b43 on #fff (6.58:1);
+   white #f5fff9 on #0a1c25 (17.05:1), mint #8df2b8 on #0a1c25
+   (12.88:1), bright CTA #052c1e on #18d47c (7.76:1).
+   See SERVICES_WCAG_AUDIT.md for computed pairs and manual QA.
+   ─────────────────────────────────────────────────────────────────────────── */
+.gama-services {
+  --gama-a11y-ink:#112a22;
+  --gama-a11y-body:#38594c;
+  --gama-a11y-muted:#496b5c;
+  --gama-a11y-link:#076b43;
+  --gama-a11y-light:#f4f9f6;
+  --gama-a11y-pale:#e4f5eb;
+  --gama-a11y-dark:#0a1c25;
+  --gama-a11y-white:#f5fff9;
+  --gama-a11y-soft:#c7e7d8;
+  --gama-a11y-bright:#8df2b8;
+  --gama-a11y-cta:#18d47c;
+  --gama-a11y-cta-ink:#052c1e;
+}
+.gama-services :is(a,button,summary):focus-visible{
+  outline:3px solid #076b43;
+  outline-offset:4px;
+  box-shadow:0 0 0 6px #fff;
+}
+.gama-services :is(.gama-svc-hero,.gama-svc-process-area,.gama-svc-proof,.gama-svc-closing) :is(a,button,summary):focus-visible{
+  outline-color:#8df2b8;
+  box-shadow:0 0 0 6px #0a1c25;
+}
+.gama-services :is(.gama-svc-pathway,.gama-guide-card-link,.gama-svc-outcome-row,.gama-svc-contact-card):hover{text-decoration:none}
+.gama-services :is(.gama-svc-pathway,.gama-svc-outcome-row,.gama-svc-contact-card,.gama-guide-card-link){transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.gama-services :is(.gama-svc-pathway,.gama-svc-outcome-row,.gama-svc-contact-card,.gama-guide-card-link):hover{transform:translateY(-3px);box-shadow:0 19px 38px rgba(15,80,57,.12)}
+/* Ensure the original custom hero/pathway content has robust text colors. */
+.gama-svc-pathways,.gama-svc-highlights{background:#f4f9f6;color:#112a22}
+.gama-svc-section-intro .gama-svc-kicker{color:#076b43}
+.gama-svc-section-intro h2,.gama-svc-pathway h3,.gama-svc-highlight h3{color:#112a22}
+.gama-svc-section-intro h2 em{color:#076b43}
+.gama-svc-section-intro>p,.gama-svc-pathway>p,.gama-svc-highlight p{color:#38594c}
+.gama-svc-pathway{border-color:#8fae9e;background:#fff;color:#112a22!important}
+.gama-svc-pathway-meta,.gama-svc-pathway-link{color:#076b43}
+.gama-svc-pathway-meta b{color:#076b43}
+.gama-svc-pathway-meta span{color:#076b43}
+.gama-svc-pathway-link{border-top:1px solid #b3d4c3;margin-top:auto}
+.gama-svc-pathway-note{color:#496b5c}
+.gama-svc-bridge{background:#e4f5eb;color:#112a22}
+.gama-svc-bridge h2,.gama-svc-service-next h2{color:#112a22}
+.gama-svc-bridge h2 em{color:#076b43}
+.gama-svc-bridge-grid>div:last-child>p{color:#38594c}
+.gama-svc-bridge .gama-svc-button-outline{background:#fff;color:#076b43!important;border:2px solid #076b43}
+.gama-svc-bridge .gama-svc-button-outline:focus-visible{outline-color:#076b43}
+/* SECTION 1 – A bold, welcoming, readable service introduction */
+.gama-svc-detail-intro{padding:95px 0;background:#e4f5eb;color:#112a22}
+.gama-svc-detail-intro-grid{display:grid;grid-template-columns:minmax(0,.96fr) minmax(0,1.04fr);gap:7%;align-items:center}
+.gama-svc-detail-intro .gama-svc-kicker,.gama-svc-outcomes .gama-svc-kicker,.gama-svc-offerings .gama-svc-kicker,.gama-svc-engagements .gama-svc-kicker,.gama-svc-faq-section .gama-svc-kicker{color:#076b43}
+.gama-svc-detail-intro h2,.gama-svc-outcomes h2,.gama-svc-offerings h2,.gama-svc-engagements h2,.gama-svc-faq-section h2{font-size:clamp(2.15rem,3.8vw,3.7rem);line-height:1.08;color:#112a22;margin:15px 0 19px}
+.gama-svc-detail-intro h2 em,.gama-svc-outcomes h2 em,.gama-svc-offerings h2 em,.gama-svc-engagements h2 em,.gama-svc-faq-section h2 em{font-style:normal;color:#076b43}
+.gama-svc-detail-intro p:not(.gama-svc-kicker){color:#38594c;font-size:1.06rem;line-height:1.68}
+.gama-svc-contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.gama-svc-contact-card{display:flex;flex-direction:column;align-items:flex-start;padding:22px 20px;background:#fff;border:2px solid #9ab9a7;border-radius:17px;min-height:275px;color:#112a22!important}
+.gama-svc-contact-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:12px;background:#e4f5eb;color:#076b43;border:1px solid #9ebdaa;font-size:23px}
+.gama-svc-contact-card h3{font-size:1.3rem;margin:18px 0 9px;color:#112a22;line-height:1.2}
+.gama-svc-contact-card p{color:#38594c!important;font-size:.93rem!important;line-height:1.55!important}
+.gama-svc-contact-link{display:flex;align-items:center;justify-content:space-between;width:100%;gap:8px;border-top:1px solid #bbd8c8;margin-top:auto;padding-top:15px;color:#076b43;font-size:.83rem;font-weight:800}
+/* SECTION 2 – Outcome comparison, designed as full-width linkable rows */
+.gama-svc-outcomes{padding:98px 0;background:#f4f9f6;color:#112a22}
+.gama-svc-outcome-board{overflow:hidden;border:2px solid #7e9f8d;border-radius:19px;box-shadow:0 16px 44px rgba(20,73,46,.055);background:#fff}
+.gama-svc-outcome-head,.gama-svc-outcome-row{display:grid;grid-template-columns:1.27fr .92fr .88fr;gap:24px;align-items:center;padding:22px 27px}
+.gama-svc-outcome-head{background:#143b32;color:#f5fff9;font-weight:800;letter-spacing:.13em;font-size:.69rem}
+.gama-svc-outcome-row{color:#112a22!important;border-top:1px solid #adcbbb;min-height:95px;background:#fff;position:relative}
+.gama-svc-outcome-row:nth-child(odd){background:#f1f9f4}
+.gama-svc-outcome-row:hover{position:relative;z-index:1;background:#e4f5eb}
+.gama-svc-outcome-priority{font-weight:720;font-size:1rem;display:flex;align-items:center;gap:17px;line-height:1.4;color:#112a22}
+.gama-svc-outcome-priority b{color:#076b43;font-size:.8rem;font-weight:900}
+.gama-svc-outcome-row>strong{color:#07543b;font-size:1.07rem;line-height:1.35}
+.gama-svc-outcome-engagement{display:flex;align-items:center;justify-content:space-between;gap:7px;color:#38594c;font-size:.89rem;line-height:1.44}
+.gama-svc-outcome-engagement b{color:#076b43;font-size:1.2rem}
+.gama-svc-outcome-caption{color:#496b5c!important;font-size:.88rem;margin-top:19px!important}
+/* SECTION 3 – Four illustrated service stories */
+.gama-svc-offerings{padding:102px 0;background:#e4f5eb;color:#112a22}
+.gama-svc-offering-stack{display:grid;gap:23px}
+.gama-svc-offering{display:grid;grid-template-columns:minmax(0,1.17fr) minmax(0,.83fr);overflow:hidden;border-radius:22px;background:#fff;border:2px solid #9dbea9;box-shadow:0 20px 46px rgba(12,70,42,.075)}
+.gama-svc-offering:nth-child(even) .gama-svc-offering-main{order:2}
+.gama-svc-offering:nth-child(even) .gama-svc-detail-visual{order:1}
+.gama-svc-offering-main{padding:35px 38px 32px}
+.gama-svc-offering-top{display:flex;justify-content:space-between;align-items:center;gap:18px;color:#076b43;font-size:.67rem;font-weight:850;letter-spacing:.12em}
+.gama-svc-offering-main h3{font-size:clamp(1.68rem,2.4vw,2.65rem);line-height:1.12;color:#112a22;margin:23px 0 15px}
+.gama-svc-offering-description{color:#38594c!important;line-height:1.65;font-size:1.03rem}
+.gama-svc-benefits{list-style:none!important;padding:0!important;margin:22px 0!important;display:grid;gap:10px}
+.gama-svc-benefits li{display:flex;align-items:flex-start;gap:11px;color:#38594c;font-size:.92rem;line-height:1.48}
+.gama-svc-benefits li>span{display:grid;place-items:center;flex:0 0 23px;height:23px;border-radius:50%;background:#d6f4e4;color:#076b43;font-weight:900}
+.gama-svc-fit-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding-top:18px;margin-top:10px;border-top:1px solid #b6d5c4}
+.gama-svc-fit-row b{color:#07543b;font-size:.67rem;letter-spacing:.1em}
+.gama-svc-fit-row p{color:#38594c;font-size:.86rem;line-height:1.58;margin-top:6px}
+.gama-svc-offering-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-top:28px}
+.gama-svc-offering-bottom>span{color:#38594c;font-size:.85rem;font-weight:760}
+.gama-svc-offering-bottom a{display:inline-flex;gap:18px;align-items:center;justify-content:space-between;background:#07543b;color:#fff!important;border-radius:9px;font-size:.89rem;font-weight:800;padding:12px 16px;border:2px solid #07543b;min-height:46px}
+.gama-svc-offering-bottom a:hover{background:#0c704e}
+/* Decorative diagrams on contrast-safe navy; never rely on them for info. */
+.gama-svc-detail-visual{position:relative;display:grid;place-items:center;min-height:420px;background:radial-gradient(circle at 50% 40%,rgba(25,198,125,.2),transparent 52%),linear-gradient(142deg,#143b3b,#0a1c25);overflow:hidden}
+.gama-svc-detail-visual-glow{position:absolute;width:300px;height:300px;border:1px dashed #4da986;border-radius:50%;box-shadow:0 0 0 42px rgba(33,178,115,.08),0 0 0 86px rgba(35,173,113,.045);transform:rotate(-23deg)}
+.gama-svc-detail-display{z-index:2;position:relative;width:75%;height:230px;border:7px solid #0f483f;border-radius:13px;background:#f4f9f6;box-shadow:15px 15px 0 #0c493e,0 15px 30px rgba(0,0,0,.28)}
+.gama-svc-display-top{height:29px;background:#164c3f;color:#79e9b5;padding:6px 11px;font-size:11px;letter-spacing:.08em}
+.gama-svc-display-top span{float:right;font-size:9px;letter-spacing:.12em}
+.gama-svc-display-body{position:absolute;top:54px;left:17px;width:41%}
+.gama-svc-display-body i{display:block;width:82%;height:9px;border-radius:5px;margin:12px 0;background:#95c9ab}
+.gama-svc-display-body i:nth-child(2){width:58%}.gama-svc-display-body i:nth-child(3){width:67%}
+.gama-svc-display-body b{display:block;width:67px;height:22px;border-radius:5px;margin-top:20px;background:#107b4f}
+.gama-svc-display-tile{position:absolute;right:15px;top:50px;width:44%;height:112px;border-radius:8px;background:linear-gradient(140deg,#a4e3bb,#18885e)}
+.gama-svc-detail-flow{position:relative;z-index:2;display:flex;align-items:center;gap:6px;flex-wrap:nowrap;max-width:95%}
+.gama-svc-detail-flow span{display:grid;place-content:center;width:79px;height:73px;text-align:center;border:2px solid #70cda2;background:#133e3d;color:#f5fff9;font-size:11px;font-weight:850;border-radius:11px}
+.gama-svc-detail-flow i{height:3px;width:15px;flex-shrink:1;background:#80efb6}
+.gama-svc-detail-flow .gama-svc-detail-focus{border-color:#8df2b8;background:#0b684d}
+.gama-svc-detail-modules{display:grid;grid-template-columns:repeat(2,100px);gap:27px;transform:rotate(-12deg);position:relative;z-index:2}
+.gama-svc-detail-modules span{display:grid;place-content:center;height:90px;border:2px solid #8df2b8;border-radius:15px;color:#f5fff9;background:linear-gradient(137deg,#1b6c57,#103b3c);font-size:18px;font-weight:870;letter-spacing:.12em;box-shadow:10px 12px 0 #052c28}
+.gama-svc-detail-orbits{position:relative;z-index:2;width:285px;height:285px;border:2px dashed #5da482;border-radius:50%;display:grid;place-items:center}
+.gama-svc-detail-orbits strong{display:grid;place-items:center;width:110px;height:110px;border:2px solid #88eab6;border-radius:50%;background:#0e6e4d;color:#fff;font-size:16px}
+.gama-svc-detail-orbits>span{position:absolute;background:#19483f;border:2px solid #72c69d;color:#f5fff9;padding:9px;border-radius:10px;font-size:9px;font-weight:830;letter-spacing:.06em}
+.gama-svc-detail-orbits>span:nth-child(1){left:-28px;top:19px}.gama-svc-detail-orbits>span:nth-child(2){right:-24px;top:19px}.gama-svc-detail-orbits>span:nth-child(4){left:-15px;bottom:17px}.gama-svc-detail-orbits>span:nth-child(5){right:-16px;bottom:17px}
+/* SECTION 4 – Process / systems thinking */
+.gama-svc-process-area{background:#0a1c25;color:#f5fff9;padding:103px 0}
+.gama-svc-process-grid{display:grid;grid-template-columns:1fr .86fr;gap:11%}
+.gama-svc-process-area h2,.gama-svc-proof h2,.gama-svc-closing h2{font-size:clamp(2.1rem,3.8vw,3.75rem);line-height:1.1;color:#f5fff9;margin:16px 0 22px}
+.gama-svc-process-area h2 em,.gama-svc-proof h2 em,.gama-svc-closing h2 em{color:#8df2b8;font-style:normal}
+.gama-svc-process-area p:not(.gama-svc-kicker){font-size:1.03rem;line-height:1.65;color:#c7e7d8;margin:0 0 16px}
+.gama-svc-process-caveat{font-size:.91rem!important;color:#acd5c1!important}
+.gama-svc-process-list{margin:0;padding:0;list-style:none!important}
+.gama-svc-process-list li{display:grid;grid-template-columns:47px 1fr;gap:19px;padding:18px 0;border-bottom:1px solid #426358}
+.gama-svc-process-list li>span{color:#8df2b8;font-weight:820}
+.gama-svc-process-list h3{color:#f5fff9;font-size:1.42rem;margin:0 0 7px}
+.gama-svc-process-list p{font-size:.93rem!important;margin:0!important}
+/* SECTION 5 – Engagement options */
+.gama-svc-engagements{background:#e4f5eb;color:#112a22;padding:103px 0}
+.gama-svc-engagement-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.gama-svc-engagement-card{background:#fff;border:2px solid #92b6a0;border-radius:16px;padding:25px 21px;min-height:260px}
+.gama-svc-engagement-card>div{display:flex;gap:12px;justify-content:space-between;align-items:center;font-size:.68rem;letter-spacing:.09em;font-weight:840;color:#076b43}
+.gama-svc-engagement-card h3{font-size:1.48rem;color:#112a22;margin:38px 0 13px}
+.gama-svc-engagement-card p{color:#38594c;font-size:.92rem;line-height:1.62}
+/* SECTION 6 – Founder context without unsupported claims */
+.gama-svc-proof{background:#102b30;color:#f5fff9;padding:83px 0}
+.gama-svc-proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:10%;align-items:center}
+.gama-svc-proof-grid>div:last-child p{color:#c7e7d8;line-height:1.67;font-size:1.02rem;margin-bottom:18px}
+.gama-svc-proof-grid a{color:#8df2b8!important;font-weight:800;border-bottom:2px solid #8df2b8;padding-bottom:4px}
+/* SECTION 7 – Native semantic details rather than theme dependent accordions */
+.gama-svc-faq-section{background:#f4f9f6;color:#112a22;padding:105px 0}
+.gama-svc-faq-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:9%;align-items:start}
+.gama-svc-faq-grid>div:first-child>p:not(.gama-svc-kicker){color:#38594c;line-height:1.65}
+.gama-svc-faq-list{border-top:2px solid #719e84}
+.gama-svc-faq-item{border-bottom:1px solid #93b7a3;background:#fff}
+.gama-svc-faq-item summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:19px;padding:19px 17px;min-height:56px;cursor:pointer;font-size:1.03rem;line-height:1.36;font-weight:780;color:#112a22}
+.gama-svc-faq-item summary::-webkit-details-marker{display:none}
+.gama-svc-faq-item summary span{display:grid;place-content:center;flex:0 0 25px;height:25px;background:#e4f5eb;border:1px solid #83ab92;border-radius:7px;color:#076b43;font-weight:900}
+.gama-svc-faq-item[open] summary{background:#e4f5eb}
+.gama-svc-faq-item[open] summary span{transform:rotate(45deg)}
+.gama-svc-faq-item p{color:#38594c;line-height:1.72;font-size:.96rem;padding:3px 17px 23px;margin:0}
+/* SECTION 8 – Designed final call to action */
+.gama-svc-closing{text-align:center;padding:95px 0;background:#0a1c25;color:#f5fff9}
+.gama-svc-closing h2{font-size:clamp(2.4rem,4.6vw,4.5rem)}
+.gama-svc-closing>div>p:not(.gama-svc-kicker){font-size:1.07rem;color:#c7e7d8;max-width:670px;margin:0 auto}
+.gama-svc-closing .gama-svc-actions{justify-content:center}
+/* Custom service guide components: these replace theme-native cards, tabs,
+   notes, and accordions on the four detailed service pages. */
+.gama-services-detail-area{background:#f4f9f6!important;color:#112a22!important}
+.gama-services-detail-area :is(h1,h2,h3,h4){color:#112a22}
+.gama-services-detail-area :is(p,li,td,th){color:#38594c}
+.gama-guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin:23px 0 28px}
+.gama-guide-grid-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.gama-guide-card{display:flex;flex-direction:column;align-items:flex-start;gap:0;background:#fff;border:2px solid #92b5a3;border-radius:17px;padding:24px 22px;min-height:189px;color:#112a22}
+.gama-guide-card-header{width:100%;display:flex;align-items:center;justify-content:space-between}
+.gama-guide-card-icon{display:grid;place-content:center;width:46px;height:46px;background:#e4f5eb;border:1px solid #7da78f;border-radius:11px;color:#076b43;font-size:23px;font-weight:850}
+.gama-guide-card-arrow{font-size:23px;color:#076b43;font-weight:800}
+.gama-guide-card-title{display:block;font-size:1.22rem;font-weight:820;color:#112a22;line-height:1.27;margin:16px 0 10px}
+.gama-guide-card-body{color:#38594c;font-size:.96rem;line-height:1.65}
+.gama-guide-card-body :is(p,li,strong,em,span){color:inherit}
+.gama-guide-card-body p{margin:0!important;line-height:1.65}
+.gama-guide-card-body a{color:#076b43;text-decoration:underline}
+.gama-guide-card-link{color:#112a22!important}
+.gama-guide-card-link:hover{background:#e4f5eb;border-color:#076b43}
+.gama-guide-card-link .gama-guide-card-title{color:#07543b}
+.gama-guide-card-link .gama-guide-card-body{color:#38594c}
+.gama-guide-note{display:flex;align-items:start;gap:16px;margin:26px 0;padding:18px 21px;border-radius:13px;border:2px solid #78aa90;background:#e4f5eb;color:#112a22}
+.gama-guide-note-warning{border-color:#ae8a3f;background:#fff2d7}
+.gama-guide-note-symbol{display:grid;place-content:center;flex:0 0 30px;height:30px;border-radius:50%;background:#07543b;color:#fff;font-weight:850;font-size:15px}
+.gama-guide-note-warning .gama-guide-note-symbol{background:#755213}
+.gama-guide-note-body{min-width:0;flex:1;color:#38594c;line-height:1.65}
+.gama-guide-note-warning .gama-guide-note-body{color:#513a15}
+.gama-guide-note-body :is(p,li){color:inherit!important;margin:0 0 9px}
+.gama-guide-note-body :last-child{margin-bottom:0}
+.gama-guide-note-body :is(strong,b){color:#112a22}
+.gama-guide-note-warning .gama-guide-note-body :is(strong,b){color:#513a15}
+.gama-guide-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin:22px 0 30px}
+.gama-guide-panel{border:2px solid #92b5a3;border-radius:16px;background:#fff;padding:24px}
+.gama-services-detail-area .gama-guide-panel h3{font-size:1.28rem;margin:0 0 13px;padding:0;color:#112a22}
+.gama-guide-panel p{color:#38594c!important;line-height:1.65}
+.gama-guide-steps{list-style:none!important;counter-reset:gama-steps;padding:0!important;margin:25px 0 35px!important}
+.gama-guide-steps>li{counter-increment:gama-steps;display:grid;grid-template-columns:39px 1fr;gap:19px;position:relative;padding:0 0 25px;color:#38594c}
+.gama-guide-steps>li::before{content:counter(gama-steps,decimal-leading-zero);display:grid;place-content:center;background:#07543b;color:#fff;border-radius:9px;width:36px;height:36px;font-size:12px;font-weight:840}
+.gama-guide-steps>li:not(:last-child)::after{content:"";position:absolute;left:18px;top:42px;bottom:7px;border-left:2px solid #96bda7}
+.gama-services-detail-area .gama-guide-steps h3{font-size:1.26rem;margin:0 0 8px;color:#112a22}
+.gama-guide-steps p{color:#38594c!important;margin:0 0 10px}
+.gama-guide-faqs{margin:25px 0 34px;border-top:2px solid #719e84}
+.gama-guide-faq{background:#fff;border-bottom:1px solid #91b7a3}
+.gama-guide-faq summary{display:flex;align-items:center;justify-content:space-between;list-style:none;gap:20px;padding:17px;cursor:pointer;min-height:52px;color:#112a22;font-weight:770;font-size:1rem}
+.gama-guide-faq summary::-webkit-details-marker{display:none}
+.gama-guide-faq summary span{display:grid;place-content:center;flex:0 0 24px;height:24px;border:1px solid #8ab29b;background:#e4f5eb;border-radius:6px;color:#076b43}
+.gama-guide-faq[open] summary span{transform:rotate(45deg)}
+.gama-guide-faq[open] summary{background:#e4f5eb}
+.gama-guide-faq-content{padding:5px 18px 22px}
+.gama-guide-faq-content p{color:#38594c!important;line-height:1.7;margin:0 0 10px}
+.gama-guide-faq-content :is(li,span){color:#38594c}
+.gama-services-detail-area a:not(.gama-guide-card-link):not([class]){color:#076b43}
+.gama-services-detail-area :is(table th){background:#143b32;color:#f5fff9}
+.gama-services-detail-area :is(table td){background:#fff;color:#38594c}
+.gama-services-detail-area table{border:1px solid #92b5a3;border-collapse:collapse}
+.gama-services-detail-area :is(table th,table td){padding:13px;border:1px solid #9fbdac}
+@media(max-width:1060px){
+ .gama-svc-detail-intro-grid,.gama-svc-process-grid,.gama-svc-proof-grid{grid-template-columns:1fr;gap:37px}
+ .gama-svc-contact-grid{max-width:700px}
+ .gama-svc-engagement-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:780px){
+ .gama-svc-outcome-head{display:none}
+ .gama-svc-outcome-row{grid-template-columns:1fr;gap:8px;padding:22px}
+ .gama-svc-outcome-engagement{justify-content:flex-start}
+ .gama-svc-outcome-engagement b{margin-left:auto}
+ .gama-svc-offering{grid-template-columns:1fr}
+ .gama-svc-offering:nth-child(even) .gama-svc-offering-main{order:1}
+ .gama-svc-offering:nth-child(even) .gama-svc-detail-visual{order:2}
+ .gama-svc-detail-visual{min-height:290px}
+ .gama-svc-faq-grid{grid-template-columns:1fr;gap:28px}
+ .gama-guide-grid-three{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:610px){
+ .gama-svc-detail-intro,.gama-svc-outcomes,.gama-svc-offerings,.gama-svc-process-area,.gama-svc-engagements,.gama-svc-proof,.gama-svc-faq-section,.gama-svc-closing{padding:67px 0}
+ .gama-svc-contact-grid,.gama-svc-engagement-grid,.gama-guide-grid,.gama-guide-grid-three,.gama-guide-panels{grid-template-columns:1fr}
+ .gama-svc-contact-card{min-height:205px}
+ .gama-svc-outcome-row{min-height:0}
+ .gama-svc-offering-main{padding:27px 22px}
+ .gama-svc-fit-row{grid-template-columns:1fr}
+ .gama-svc-engagement-card{min-height:0}
+ .gama-svc-detail-flow span{width:61px;height:60px;font-size:9px}
+ .gama-svc-detail-flow i{width:7px}
+ .gama-svc-detail-orbits{width:210px;height:210px}
+ .gama-svc-detail-orbits strong{width:79px;height:79px;font-size:12px}
+ .gama-svc-detail-orbits>span{font-size:7px;padding:6px}
+ .gama-svc-detail-orbits>span:nth-child(1){left:-20px}.gama-svc-detail-orbits>span:nth-child(2){right:-20px}.gama-svc-detail-orbits>span:nth-child(4){left:-12px}.gama-svc-detail-orbits>span:nth-child(5){right:-12px}
+ .gama-svc-detail-modules{grid-template-columns:repeat(2,74px);gap:18px}
+ .gama-svc-detail-modules span{height:69px;font-size:14px}
+ .gama-guide-card{min-height:0}
+}
+@media(prefers-reduced-motion:reduce){
+ .gama-services :is(.gama-svc-pathway,.gama-svc-outcome-row,.gama-svc-contact-card,.gama-guide-card-link){transition:none!important;transform:none!important}
+}
+
+
+/* WCAG non-text contrast: make essential white-card outlines >= 3:1.
+   #698a78 is 3.81:1 against white; hover uses #07543b. */
+.gama-services :is(.gama-svc-pathway,.gama-svc-contact-card,.gama-svc-offering,.gama-svc-engagement-card,.gama-guide-card,.gama-guide-panel){border-color:#698a78}
+.gama-svc-outcome-board{border-color:#698a78}
+.gama-services :is(.gama-svc-pathway,.gama-svc-contact-card,.gama-guide-card-link):hover{border-color:#07543b}
+.gama-services :is(.gama-svc-pricing,.gama-svc-network) :is(a,button,summary):focus-visible{
+  outline-color:#8df2b8;
+  box-shadow:0 0 0 6px #0a1c25;
+}
+/* Keep readable captions even when browser overrides surrounding theme. */
+.gama-guide-card-body :is(p,ul,ol,li){color:#38594c!important}
+.gama-guide-card-body :is(strong,b){color:#112a22!important}
+.gama-guide-note :is(p,ul,ol,li){color:#38594c!important}
+.gama-guide-note-warning :is(p,ul,ol,li){color:#513a15!important}
+.gama-services-detail-area .gama-guide-card a:not(.gama-guide-card-link){color:#076b43!important}
+
+
+/* Site-wide companion fixes discovered in the contrast inventory.
+   These only adjust under-contrast text/focus, not approved layouts. */
+.gama-home-service-top{color:#38594c}
+.gama-home-services .gama-home-kicker,
+.gama-home-how .gama-home-kicker,
+.gama-home-feature-copy .gama-home-kicker,
+.gama-home-featured .gama-home-kicker,
+.gama-portfolio-gallery .gama-portfolio-kicker{color:#076b43}
+.gama-home-price span,.gama-home-small,.gama-home-how-intro,
+.gama-home-process p,.gama-portfolio-clarity p,
+.gama-home-featured-disclaimer{color:#38594c}
+.gama-home-featured .gama-home-section-intro h2 span{color:#076b43}
+.gama-home a:focus-visible,.gama-portfolio a:focus-visible{
+  outline:3px solid #076b43;outline-offset:4px;border-radius:6px
+}
+.gama-home :is(.gama-home-hero,.gama-home-cta,.gama-home-featured-card),
+.gama-portfolio :is(.gama-portfolio-hero,.gama-portfolio-cta,.gama-work-art){position:relative}
+.gama-home :is(.gama-home-hero,.gama-home-cta,.gama-home-featured-card) a:focus-visible,
+.gama-portfolio :is(.gama-portfolio-hero,.gama-portfolio-cta) a:focus-visible{
+  outline-color:#8df2b8;
+}
+
+.gama-svc-detail-display-web{box-shadow:15px 15px 0 #0c493e,0 15px 30px rgba(0,0,0,.28)}
+
+
+/* Distinguish interactive row and FAQ boundaries with at least 3:1 on white. */
+.gama-svc-outcome-row{border-top-color:#698a78}
+.gama-svc-faq-item,.gama-guide-faq{border-bottom-color:#698a78}
+.gama-svc-faq-list,.gama-guide-faqs{border-top-color:#698a78}
+
+
+/* Individual service illustration finishes, consistent with the brand palette. */
+.gama-svc-detail-visual-web{background:radial-gradient(circle at 61% 37%,rgba(31,215,143,.22),transparent 54%),linear-gradient(135deg,#153f41,#0a1c25)}
+.gama-svc-detail-visual-automation{background:radial-gradient(circle at 50% 47%,rgba(28,214,133,.25),transparent 55%),linear-gradient(145deg,#10393d,#0a1c25)}
+.gama-svc-detail-visual-it{background:radial-gradient(circle at 46% 45%,rgba(33,191,146,.19),transparent 54%),linear-gradient(140deg,#132c43,#0a1c25)}
+.gama-svc-detail-visual-governance{background:radial-gradient(circle at 53% 48%,rgba(47,199,134,.2),transparent 58%),linear-gradient(142deg,#123a37,#0a1c25)}
