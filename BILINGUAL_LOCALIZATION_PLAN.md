@@ -35,17 +35,17 @@
 - Prefer natural terms: *automatización de procesos*, *servicios de TI*, *gobernanza*, *financiación*, *portafolio*, *proyecto a medida*.
 - Translate buttons, accessibility labels, SEO titles/descriptions, internal links, and alt text alongside body copy.
 - Keep project status and founder relationship qualifications explicit; no implied client projects or performance claims.
-- For the remaining detailed service pages, translate **all** original commercial, operational and professional boundaries and FAQs rather than using abbreviated cards.
+- All four detailed service pages have been translated in full (Governance pending review/merge). Keep commercial, operational and professional boundaries and FAQs aligned with their English originals.
 - Language switcher should provide a route to the corresponding page where translated. For pages not yet translated, avoid misleading route mapping.
 
 ## Preview acceptance criteria
 
 - [ ] Mintlify docs.json schema accepts `navigation.languages` with `tabs` nested under `en` and `es`.
 - [ ] Spanish language chooser displays correctly and English routes remain unchanged.
-- [ ] `/es/`, `/es/services`, and `/es/portfolio` render, open in Mintlify dashboard editor, and resolve the imported JSX snippet.
+- [ ] All translated Spanish routes, including `/es/governance-funding-systems`, render, open in the Mintlify dashboard editor, and resolve their JSX/MDX snippet imports.
 - [ ] Spanish typography does not clip and service graphics remain legible at 1440, 1024, 768, 390, and 320 px.
 - [ ] Check keyboard navigation, heading hierarchy, contrast, and focus states against WCAG 2.2 AA.
-- [ ] Verify all Spanish internal URLs, English details links, booking links and email behavior.
+- [ ] Verify Spanish-to-Spanish service cross-links, English-only About/Contact handoffs, original booking links and email behavior.
 - [ ] Verify Spanish title/description metadata, canonical behavior, language alternates/hreflang, and social previews as actually rendered.
 - [ ] Check native interface strings such as search, breadcrumbs, and language selector.
 - [ ] Confirm no content inadvertently copied into the Spanish language tree in English without an explicit disclaimer.
