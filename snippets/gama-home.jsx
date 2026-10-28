@@ -203,7 +203,7 @@ export const GamaHomeExperience = () => (
     <footer className="gama-home-footer">
       <div className="gama-home-container gama-home-footer-inner">
         <span><strong>GAMA Works</strong> · Practical digital systems</span>
-        <a href="mailto:hello@gama.works">hello@gama.works</a>
+        <a href="mailto:hello%40gama.works" aria-label="Email GAMA Works"><span className="gama-visible-email"><span>hello</span><span>@</span><span>gama.works</span></span></a>
         <a href="/services">Services</a>
         <a href="/background">About</a>
       </div>
