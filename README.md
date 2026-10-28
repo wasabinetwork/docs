@@ -94,6 +94,7 @@ This repository powers the GAMA Works documentation and service pages using [Min
 
 - [Home](./index.mdx) — business-first overview, audience fit, service pathways, and discovery calls.
 - [Services](./services.mdx) — compare WebReady, Automation, IT Services, and Governance & Funding Systems.
+- [Portfolio](./portfolio.mdx) — selected independent products, founder-led initiatives, open-source platforms, and in-house work.
 - [About GAMA Works](./background.mdx) — mission, vision, service philosophy, founder story, relevant experience, and how we work.
 - [IT Services](./it-services.mdx) — custom applications, infrastructure, hosting, migrations, integrations, business email, and ongoing technical support.
 - [GAMA WebReady Bundle](./gama-web-ready-bundle.mdx) — the evergreen web-presence bundle for solopreneurs and small businesses.
@@ -101,7 +102,7 @@ This repository powers the GAMA Works documentation and service pages using [Min
 - [Governance & Funding Systems](./governance-funding-systems.mdx) — governance operations, grants programs, ecosystem design, and strategic advisory.
 - [Contact](./contact.mdx) — centralized inquiry hub, service routing, project intake guidance, booking, and existing-client support.
 
-Site settings and the **Home → Services → About → Contact** navigation are defined in [`docs.json`](./docs.json). The Services tab includes WebReady, Automation & Workflow Design, IT Services, and Governance & Funding Systems. The page inventory, URL decisions, and post-merge QA checklist live in [`SITE_REFACTOR_AUDIT.md`](./SITE_REFACTOR_AUDIT.md).
+Site settings and the **Home → Services → Portfolio → About → Contact** navigation are defined in [`docs.json`](./docs.json). The Services tab includes WebReady, Automation & Workflow Design, IT Services, and Governance & Funding Systems. The responsive visual system for the custom-mode Home and Portfolio pages is in [`style.css`](./style.css). The page inventory, URL decisions, and post-merge QA checklist live in [`SITE_REFACTOR_AUDIT.md`](./SITE_REFACTOR_AUDIT.md).
 
 ---
 
