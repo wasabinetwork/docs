@@ -73,7 +73,8 @@
             "pages": [
               "es/services",
               "es/gama-web-ready-bundle",
-              "es/automation-workflow-design"
+              "es/automation-workflow-design",
+              "es/it-services"
             ]
           },
           {
