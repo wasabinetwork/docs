@@ -891,3 +891,31 @@
   .gama-es .gama-svc-it-core strong{overflow-wrap:anywhere;line-height:1.5}
   .gama-es .gama-svc-it-node small{font-size:9px;letter-spacing:.03em}
 }
+
+
+/* Spanish Governance & Funding service: text expansion and WCAG-aligned palette. */
+.gama-es .gama-svc-hero-governance {
+  background:radial-gradient(circle at 75% 32%,rgba(23,211,133,.14),transparent 43%),linear-gradient(125deg,#061520,#0d2530 65%,#09231f);
+}
+.gama-es .gama-svc-hero-governance h1 {
+  font-size:clamp(2.5rem,4.45vw,4.9rem);
+  overflow-wrap:break-word;
+}
+.gama-es .gama-svc-hero-governance .gama-svc-scope-note {
+  color:#c7e7d8;
+  line-height:1.6;
+}
+.gama-es .gama-svc-gov-node small {
+  max-width:100%;
+  text-align:center;
+  overflow-wrap:anywhere;
+  font-size:8px;
+  line-height:1.4;
+}
+.gama-es #detalles-gobernanza {scroll-margin-top:90px}
+@media(max-width:610px) {
+  .gama-es .gama-svc-hero-governance h1 {font-size:clamp(2.3rem,8.1vw,3.65rem)}
+  .gama-es .gama-svc-gov-node {width:75px;height:70px;padding:4px}
+  .gama-es .gama-svc-gov-node small {font-size:7px;letter-spacing:.035em}
+  .gama-es .gama-svc-gov-core small {font-size:8px}
+}
