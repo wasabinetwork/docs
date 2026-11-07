@@ -30,7 +30,7 @@ export const GamaHomeExperience = () => (
           <div className="gama-home-art-network">
             <span className="gama-home-art-axis gama-home-art-axis-a" aria-hidden="true"></span>
             <span className="gama-home-art-axis gama-home-art-axis-b" aria-hidden="true"></span>
-            <div className="gama-home-art-core" aria-hidden="true"><span>G</span><small>WORKS</small></div>
+            <div className="gama-home-art-core gama-brand-emblem-core" aria-hidden="true"><img className="gama-brand-emblem-img" src="/images/gama-emblem-emerald.svg" alt="" width="112" height="112" decoding="async" /></div>
             <div className="gama-home-art-tile gama-home-art-tile-web">
               <span className="gama-home-art-icon">▣</span>
               <strong>Web presence</strong>
