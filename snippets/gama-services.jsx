@@ -121,7 +121,7 @@ const GamaNetworkArt = () => (
   <div className="gama-svc-network" role="img" aria-label="Four interconnected capabilities: websites, automation, IT systems, and governance, linked through a shared GAMA Works coordination hub.">
     <div className="gama-svc-network-top"><span className="gama-svc-dot" aria-hidden="true"></span>CONNECTED CAPABILITIES <span>01 / 04</span></div>
     <div className="gama-svc-network-orbits" aria-hidden="true">
-      <div className="gama-svc-network-core"><span>G</span><small>WORKS</small></div>
+      <div className="gama-svc-network-core gama-brand-emblem-core" aria-hidden="true"><img className="gama-brand-emblem-img" src="/images/gama-emblem-emerald.svg" alt="" width="100" height="100" decoding="async" /></div>
       <div className="gama-svc-network-node gama-svc-network-web"><b>▣</b><strong>Web</strong><small>Presence</small></div>
       <div className="gama-svc-network-node gama-svc-network-auto"><b>⇢</b><strong>Workflow</strong><small>Automation</small></div>
       <div className="gama-svc-network-node gama-svc-network-it"><b>⌘</b><strong>IT</strong><small>Systems</small></div>
