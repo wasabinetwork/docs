@@ -1056,3 +1056,34 @@
 .gama-en-editorial .gama-es-manifesto .gama-svc-kicker{color:#076b43}
 .gama-en-editorial .gama-svc-hero h1{overflow-wrap:break-word}
 @media(max-width:610px){.gama-en-editorial .gama-svc-hero h1{font-size:clamp(2.34rem,8.2vw,3.7rem)}}
+
+
+/* GAMA Works brand emblem — used only in EN/ES Home + Services network hubs.
+   Preserve the original hero graphic geometry, orbit connections and sizing.
+   The vector is derived from the approved Illustrator logo, not text artwork. */
+.gama-home-art-core.gama-brand-emblem-core,
+.gama-svc-network-core.gama-brand-emblem-core {
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 0 15px rgba(5,163,93,.07), 0 0 64px rgba(7,201,131,.22);
+}
+.gama-brand-emblem-core .gama-brand-emblem-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+  flex: none;
+  pointer-events: none;
+}
+@media (max-width:610px) {
+  .gama-home-art-core.gama-brand-emblem-core,
+  .gama-svc-network-core.gama-brand-emblem-core {
+    box-shadow: 0 0 0 10px rgba(5,163,93,.06), 0 0 36px rgba(7,201,131,.2);
+  }
+}
